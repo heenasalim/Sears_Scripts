@@ -1,0 +1,1 @@
+pmi_range_types:Select trim(cast(DIV_NO as varchar(2))||'|'|| cast(LN_NO as char(2))||'|'|| cast(trim(PRD_RNG_CD) as char(5))||'|'||cast(trim(PRD_RNG_TYP_CD) as char(1))||'|'||cast(PRD_NO as char(8))) from PMI_TBLS.NAZXTJE where TRIM(PLN_DTL_TYP_CD) <> 'T';

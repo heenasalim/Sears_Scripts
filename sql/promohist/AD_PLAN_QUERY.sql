@@ -1,0 +1,1 @@
+pmi_range_types:Select cast(trim(DIV_NO) as char(4)),'01'xb, cast(trim(LN_NO) as char(2)),'01'xb, cast(trim(PRD_RNG_CD) as char(5)),'01'xb, cast(trim(PRD_RNG_TYP_CD) as char(1)),'01'xb, cast(trim(PRD_NO) as char(8)) from PMI_TBLS.NAZXTJE;

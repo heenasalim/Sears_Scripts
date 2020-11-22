@@ -1,0 +1,131 @@
+/*
+################################################################################
+#       Script Name   : PerformCollectImpactAdPlanPromoDataScoop_Sears_Load.fld
+#       Author        : Reggie Zamanski
+#       Date created  : 06/15/2017
+#       JIRA #        : IPS-1680  
+#       Description   : Load 'Sears Offer Manager' Data Into Temporary Ad-Plan
+#                       table.
+#
+################################################################################
+################################################################################
+#      Changed By     :  
+#      Changed Date   : xx-xx-2xxx
+#      JIRA #         : IPS-xxxx
+#
+#      Changed - 
+#
+################################################################################
+*/
+
+DROP TABLE $TD_DB_WORK.IDRP_OFFERMANAGER_ADPLAN;
+DROP TABLE $TD_DB_WORK.IDRP_OFFERMANAGER_ADPLAN_err1;
+DROP TABLE $TD_DB_WORK.IDRP_OFFERMANAGER_ADPLAN_err2;
+
+ CREATE SET TABLE $TD_DB_WORK.IDRP_OFFERMANAGER_ADPLAN, 
+     NO FALLBACK,
+     NO BEFORE JOURNAL,
+     NO AFTER JOURNAL,
+     CHECKSUM = DEFAULT,
+     DEFAULT MERGEBLOCKRATIO
+     (SRS_DIV_NO                   CHAR(3)   CHARACTER SET LATIN NOT CASESPECIFIC,
+      SRS_ITEM_NO                  CHAR(5)   CHARACTER SET LATIN NOT CASESPECIFIC,
+      SRS_LN_NO                    CHAR(2)   CHARACTER SET LATIN NOT CASESPECIFIC,
+      SRS_SLN_NO                   CHAR(2)   CHARACTER SET LATIN NOT CASESPECIFIC,
+      SRS_CLS_NO                   CHAR(3)   CHARACTER SET LATIN NOT CASESPECIFIC,
+      OFFER_START_DT               DATE FORMAT 'YYYY-MM-DD' NOT NULL,
+      OFFER_END_DT                 DATE FORMAT 'YYYY-MM-DD' NOT NULL,
+      CHANNEL_DESC                 CHAR(50)  CHARACTER SET LATIN NOT CASESPECIFIC,
+      CHANNEL_TYPE_DESC            CHAR(50)  CHARACTER SET LATIN NOT CASESPECIFIC,
+      PRODUCT_GROUP_TYPE_CD        CHAR(4)   CHARACTER SET LATIN NOT CASESPECIFIC,
+      MERCHANT_UPLIFT_QTY          DECIMAL(11,0),  
+      MARGIN_PROJECTED_SALES_QTY   DECIMAL(11,0),     
+      ACTIVITY_ID                  DECIMAL(11,0), 
+      PROMO_PRC_AMT                DECIMAL(11,2), 
+      DEAL_TYPE_ID                 DECIMAL(3,0),  
+      DEAL_VALUE_AMT               DECIMAL(11,2), 
+      DEAL_QTY                     DECIMAL(5,0), 
+      MASTER_OFFER_ID              DECIMAL(11,0),	
+      PRODUCT_GROUP_ID             DECIMAL(11,0),    
+      FMT_ID                       CHAR(1)   CHARACTER SET LATIN NOT CASESPECIFIC)
+ PRIMARY INDEX (SRS_DIV_NO, SRS_ITEM_NO);
+
+BEGIN LOADING $TD_DB_WORK.IDRP_OFFERMANAGER_ADPLAN 
+      ERRORFILES
+      $TD_DB_WORK.IDRP_OFFERMANAGER_ADPLAN_err1,
+      $TD_DB_WORK.IDRP_OFFERMANAGER_ADPLAN_err2;
+SET RECORD VARTEXT "|" ;
+
+DEFINE
+      SRS_DIV_NO                     (VARCHAR(25))
+     ,SRS_ITEM_NO                    (VARCHAR(25))
+     ,SRS_LN_NO                      (VARCHAR(25))
+     ,SRS_SLN_NO                     (VARCHAR(25))    
+     ,SRS_CLS_NO                     (VARCHAR(25))
+     ,OFFER_START_DT                 (VARCHAR(25))
+     ,OFFER_END_DT                   (VARCHAR(25))
+     ,CHANNEL_DESC                   (VARCHAR(50))
+     ,CHANNEL_TYPE_DESC              (VARCHAR(50))
+     ,PRODUCT_GROUP_TYPE_CD          (VARCHAR(25))	
+     ,MERCHANT_UPLIFT_QTY	         (VARCHAR(25)) 
+     ,MARGIN_PROJECTED_SALES_QTY     (VARCHAR(25))    
+	 ,ACTIVITY_ID                    (VARCHAR(25))
+	 ,PROMO_PRC_AMT                  (VARCHAR(25))                 
+     ,DEAL_TYPE_ID                   (VARCHAR(25))                    
+     ,DEAL_VALUE_AMT                 (VARCHAR(25))                 
+     ,DEAL_QTY                       (VARCHAR(25)) 
+     ,MASTER_OFFER_ID                (VARCHAR(25))               	
+     ,PRODUCT_GROUP_ID               (VARCHAR(25))              
+     ,FMT_ID                         (VARCHAR(25))
+ 
+FILE=$INFILE;
+
+INSERT INTO $TD_DB_WORK.IDRP_OFFERMANAGER_ADPLAN 
+     (
+      SRS_DIV_NO                  
+	 ,SRS_ITEM_NO                 
+	 ,SRS_LN_NO                   
+	 ,SRS_SLN_NO                  
+	 ,SRS_CLS_NO                  
+	 ,OFFER_START_DT              
+	 ,OFFER_END_DT                
+	 ,CHANNEL_DESC                
+	 ,CHANNEL_TYPE_DESC           
+	 ,PRODUCT_GROUP_TYPE_CD  
+     ,MERCHANT_UPLIFT_QTY	 
+	 ,MARGIN_PROJECTED_SALES_QTY  	
+	 ,ACTIVITY_ID
+	 ,PROMO_PRC_AMT                  
+     ,DEAL_TYPE_ID                    
+     ,DEAL_VALUE_AMT                 
+     ,DEAL_QTY
+     ,MASTER_OFFER_ID                               	
+     ,PRODUCT_GROUP_ID                               
+	 ,FMT_ID                      
+     )
+ VALUES 
+    (
+     :SRS_DIV_NO                  
+	,:SRS_ITEM_NO                 
+	,:SRS_LN_NO                   
+	,:SRS_SLN_NO                  
+	,:SRS_CLS_NO                  
+	,:OFFER_START_DT              
+	,:OFFER_END_DT                
+	,:CHANNEL_DESC                
+	,:CHANNEL_TYPE_DESC           
+	,:PRODUCT_GROUP_TYPE_CD
+    ,:MERCHANT_UPLIFT_QTY	
+	,:MARGIN_PROJECTED_SALES_QTY
+	,:ACTIVITY_ID
+	,:PROMO_PRC_AMT                  
+    ,:DEAL_TYPE_ID                    
+    ,:DEAL_VALUE_AMT                 
+    ,:DEAL_QTY
+    ,:MASTER_OFFER_ID                               	
+    ,:PRODUCT_GROUP_ID                                 
+	,:FMT_ID                       
+    );
+
+END LOADING;
+LOGOFF;
