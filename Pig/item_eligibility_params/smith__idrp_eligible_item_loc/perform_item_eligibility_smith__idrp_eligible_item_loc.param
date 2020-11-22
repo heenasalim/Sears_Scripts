@@ -1,0 +1,60 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         perform_item_eligibility_smith__idrp_eligible_item_loc_kmart_store.param
+# AUTHOR NAME:         Arjun Dabhade
+# CREATION DATE:       Tue Dec 31 00:22:36 EST 2013
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+# IMPORTANT NOTE: This file also serves as shell environment variables file. 
+#                 DO NOT put any pig specific code here.
+#                 ONLY keep parameter name and values
+#                 Shell commands are allowed with back ticks as values to
+#                 declared parameters.
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+CURRENT_TIMESTAMP_6PM=`date '+%Y-%m-%d 18:00:00'`
+
+WORK__IDRP_ELIGIBLE_ITEM_LOC_KMART_STORE_LOCATION=$PROJECT_WORK_DIR/kmart_store
+
+WORK__IDRP_ELIGIBLE_ITEM_LOC_KMART_DC_LOCATION=$PROJECT_WORK_DIR/kmart_dc
+
+WORK__IDRP_ELIGIBLE_ITEM_LOC_KMART_UNION_LOCATION=$PROJECT_WORK_DIR/kmart/combine/all_kmart_union
+
+WORK__IDRP_ELIGIBLE_ITEM_LOC_SEARS_IMPORT_CENTER_LOCATION=$PROJECT_WORK_DIR/item_eligibility/item_loc/sears/import_center_output
+
+WORK__IDRP_ELIGIBLE_ITEM_LOC_KMART_SEARS_UNION_LOCATION=$PROJECT_WORK_DIR/item_loc/kmart_sears_union
+
+WORK__IDRP_ELIGIBLE_ITEM_LOC_VENDOR_LOCATION=$PROJECT_WORK_DIR/item_loc/vendor
+
+WORK__IDRP_ELIGIBLE_ITEM_LOC_LOCATION=$PROJECT_WORK_DIR/item_eligibility/item_loc
+
+WORK__IDRP_ELIGIBLE_ITEM_LOCATION=$PROJECT_WORK_DIR/item_eligibility/item/current
+
+WORK__IDRP_ELIGIBLE_ITEM_LOC_SEARS_RIM_LOCATION=$PROJECT_WORK_DIR/item_eligibility/item_loc/sears/rim_output
+
+WORK__IDRP_ELIGIBLE_ITEM_LOC_SEARS_DOS_LOCATION=$PROJECT_WORK_DIR/item_eligibility/item_loc/sears/dos_output
+
+WORK__IDRP_ELIGIBLE_ITEM_LOC_SEARS_SRIM_LOCATION=$PROJECT_WORK_DIR/item_eligibility/item_loc/sears/srim_output
+
+WORK__IDRP_ELIGIBLE_ITEM_LOC_SEARS_UNION_LOCATION=$PROJECT_WORK_DIR/item_eligibility/item_loc/sears/union_outpu
+
+WORK__IDRP_ELIGIBLE_ITEM_LOC_NEW_LOCATION=$PROJECT_WORK_DIR/online_fulfillment/eligible_item_loc_new
+WORK__IDRP_ELIGIBLE_ITEM_LOC_UNION_NEW_LOCATION=$PROJECT_WORK_DIR/eligible_item_loc_new
+
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

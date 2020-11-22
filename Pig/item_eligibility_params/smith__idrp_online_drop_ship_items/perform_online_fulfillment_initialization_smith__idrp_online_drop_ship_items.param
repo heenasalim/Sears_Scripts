@@ -1,0 +1,48 @@
+###############################################################################
+#<>                          START HEADER DOCUMENT                          <>#
+###############################################################################
+# SCRIPT NAME:         perform_online_fulfillment_initialization_smith__idrp_online_drop_ship_items.param
+# AUTHOR NAME:         Arjun Dabhade
+# CREATION DATE:       27-11-2013 05:35
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+# IMPORTANT NOTE: This file also serves as shell environment variables file. 
+#                 DO NOT put any pig specific code here.
+#                 ONLY keep parameter name and values
+#                 Shell commands are allowed with back ticks as values to
+#                 declared parameters.
+#
+# DEPENDENCIES: None
+# RESTARTABLE:  N/A
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<<               START COMMON HEADER CODE - DO NOT MANUALLY EDIT           >>#
+###############################################################################
+
+
+###############################################################################
+#<<                          START CUSTOM BODY CODE                         >>#
+###############################################################################
+
+FIELD_DELIMITER_CONTROL_A=\u0001
+
+CURRENT_TIMESTAMP=`date '+%Y-%m-%d %H:%M:%S'`
+###############################################################################
+#<<              START COMMON FOOTER CODE - DO NOT MANUALLY EDIT            >>#
+###############################################################################
+
+
+
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

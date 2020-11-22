@@ -1,0 +1,23 @@
+JARPATH = /appl/hdidrp/lib/IdrpIntegrationPigUdf.jar
+num_parallel=99
+field_delimiter_a="\u0001"
+udf = /appl/hdidrp/lib/IdrpIntegrationPigUdf.jar
+item_op="/work/idrp/item_eligibility/item/item_op"
+item_trans_op="/work/idrp/item_eligibility/item/current"
+GEN_LAST_JOIN="/work/idrp/item_eligibility/item/item_op_1"
+
+gold__item_sears_channel_distribution_current="/gold/item/sears_channel_distribution/current/*"
+gold__item_vendor_package_current="/gold/item/vendor_package/current/*"
+smith__idrp_eligible_loc="/smith/idrp/eligible_loc"
+smith__idrp_eligible_item_loc="/work/idrp/kmart_sears/combine/item_loc_data/*"
+gold__item_package_current="/gold/item/package/current/*"
+gold__item_attribute_relate_current="/gold/item/attribute_relate/current/*"
+gold__inventory_sears_dc_item_facility_current="/gold/inventory/dc/sears_item_facility/current/*"
+gold__item_core_bridge_item="/gold/item/sears/core_bridge_item/record_status=active/*"
+item_rpt_cost="/incoming/idrp/item_rpt_cost/*"
+item_rpt_grp="/incoming/idrp/item_rpt_grp/*"
+smith__item_combined_hierarchy_current="/smith/item/hierarchy/current/*"
+gold__item_price_link_default_price="/gold/item/price_link_default_price/record_status=active/*"
+gold__item_price_link_member="/gold/item/price_link_member/*"
+CURRENT_TIMESTAMP=`date '+%Y-%m-%d %H:%M:%S'`
+CURRENT_DATE=`date '+%Y-%m-%d'`

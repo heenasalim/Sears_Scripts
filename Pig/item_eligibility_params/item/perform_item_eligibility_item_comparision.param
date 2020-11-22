@@ -1,0 +1,55 @@
+# input table delimiter
+input_table_delimiter = '\'\\u0001\''
+input_table_delimiter_tab = '\'\\t\''
+#JARPATH
+JARPATH = /appl/hdidrp/lib/IdrpIntegrationPigUdf.jar
+
+# output table delimiter
+output_table_delimiter = '\'\\u0001\''
+
+#output hdfs path
+output_hdfs_path = /work/idrp/item_eligibility/item/temp
+
+#rim table input path
+rim_input_hdfs_path = /gold/inventory/rim/rim_daily_inventory_current/data_center=primdata
+
+#srim table input path
+srim_input_hdfs_path = /gold/inventory/srim/daily_inventory
+
+#dos facility table input path
+dos_facility_input_hdfs_path = /gold/inventory/dc/sears_item_facility/current
+
+#dos owner table input path
+dos_owner_input_hdfs_path = /gold/inventory/dc/sears_item_owner_current
+
+#smith item table input path
+smith_item_input_hdfs_path = /smith/item/hierarchy/current
+
+#vendor package table input path
+vendor_package_input_hdfs_path = /gold/item/vendor_package/current
+
+#eligible item table input path - current
+eligible_item_input_hdfs_path = /work/idrp/item_eligibility/item/last
+
+#eligible item table input path - history
+eligible_item_input_hdfs_path_history = /smith/idrp/eligible_item
+
+#eligible loc table input path
+eligible_loc_input_hdfs_path = /work/idrp/item_eligibility/loc
+
+#eligible item loc table input path - current
+eligible_item_loc_input_hdfs_path = /work/idrp/item_eligibility/item_loc/sears/current_file
+
+#eligible item loc table input path - current
+eligible_item_loc_input_hdfs_path_history = /work/idrp/item_eligibility/item_loc/sears/history/history_file
+
+#dummy vendor warehouse reference table input path
+dummy_vendor_whse_ref_input_hdfs_path = /work/idrp/item_eligibility/item_loc/data
+
+#moving item op to smith
+smith_idrp_eligible_item = /smith/idrp/eligible_item
+
+# current date
+TODAY = `date +"%Y%m%d"`
+
+CURRENT_DATE=`date '+%Y-%m-%d'`

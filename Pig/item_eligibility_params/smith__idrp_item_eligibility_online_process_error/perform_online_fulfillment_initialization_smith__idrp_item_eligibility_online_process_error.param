@@ -1,0 +1,41 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         perform_online_fulfillment_initialization_smith__idrp_item_eligibility_online_process_error.param
+# AUTHOR NAME:         Arjun Dabhade
+# CREATION DATE:       Mon Dec 09 04:02:41 EST 2013
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+# IMPORTANT NOTE: This file also serves as shell environment variables file. 
+#                 DO NOT put any pig specific code here.
+#                 ONLY keep parameter name and values
+#                 Shell commands are allowed with back ticks as values to
+#                 declared parameters.
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+ERROR_ITEM_LOC_LOCATION=$PROJECT_WORK_DIR/item_eligibility/online_fulfillment/error_eligible_item
+
+ERROR_ONLINE_FULFILLMENT_LOCATION=$PROJECT_WORK_DIR/item_eligibility/online_fulfillment/error_online_fulfillment
+
+ERROR_ONLINE_BILLABLE_WEIGHT_LOCATION=$PROJECT_WORK_DIR/item_eligibility/online_fulfillment/error_online_billable_weight
+
+ERROR_ITEM_CURRENT_LOCATION=$PROJECT_WORK_DIR/item_eligibility/item_current/error_eligible_item
+
+ERROR_SMITH_ONLINE_ERROR_TEMP_LOCATION=$PROJECT_WORK_DIR/item_eligibility/online_fulfillment/error_temp
+
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

@@ -1,0 +1,39 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         perform_item_eligibility_srsvndrpklocn_smith__idrp_eligible_sears_vendor_package_location_current.param
+# AUTHOR NAME:         Arjun Dabhade
+# CREATION DATE:       Thu Jul 31 02:41:03 EDT 2014
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+# IMPORTANT NOTE: This file also serves as shell environment variables file. 
+#                 DO NOT put any pig specific code here.
+#                 ONLY keep parameter name and values
+#                 Shell commands are allowed with back ticks as values to
+#                 declared parameters.
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+CURRENT_DATE=`date +'%Y-%m-%d'`
+
+DATE_PREV_8_DAY=`date +'%Y-%m-%d' --date='8 days ago'`
+
+NETAPP_EXT_SRS_VP_STR_LOCATION=$PROJECT_WORK_DIR/netapp_ext_srs_vp_str
+
+NETAPP_EXT_SRS_VP_LOC_LOCATION=$PROJECT_WORK_DIR/netapp_ext_srs_vp_loc
+
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

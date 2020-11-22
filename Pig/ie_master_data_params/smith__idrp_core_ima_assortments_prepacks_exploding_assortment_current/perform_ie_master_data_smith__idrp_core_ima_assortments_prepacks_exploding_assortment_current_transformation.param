@@ -1,0 +1,43 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         perform_ie_master_data_smith__idrp_core_ima_assortments_prepacks_exploding_assortment_current_transformation.param
+# AUTHOR NAME:         Srikanth Reddy Annadi
+# CREATION DATE:       19-06-2014
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+# IMPORTANT NOTE: This file also serves as shell environment variables file. 
+#                 DO NOT put any pig specific code here.
+#                 ONLY keep parameter name and values
+#                 Shell commands are allowed with back ticks as values to
+#                 declared parameters.
+#
+#
+# REV LIST:
+#        DATE           BY                  MODIFICATION
+#        2014-08-06     Meghana Dhage       CR 2759
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+num_parallel=1
+
+work__idrp_item_hierarchy_combined_all_current_delimiter='\\u0001'
+smith__idrp_vend_pack_combined_delimiter='\\u0001'
+Gold__item_exploding_assortment_delimiter='\\u0001'
+work__idrp_sears_exploding_assortment_master_final_delimiter='\\u0001'
+smith__idrp_item_eligibility_batchdate_delimiter='\\u0001'
+
+output_table_delimiter='\\u0001'
+
+output_hdfs_path='$PROJECT_WORK_DIR/ie_master_data/smith__idrp_core_ima_assortments_prepacks_exploding_assortment_current/load_ready_file/'
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

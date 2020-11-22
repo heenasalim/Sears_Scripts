@@ -1,0 +1,55 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:  perform_ie_master_data_smith__idrp_ksn_attribute_current.param
+# AUTHOR NAME:   Bhagyashree Phapale
+# CREATION DATE: 06/12/2014
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+# IMPORTANT NOTE: This file also serves as shell environment variables file. 
+#                 DO NOT put any pig specific code here.
+#                 ONLY keep parameter name and values
+#                 Shell commands are allowed with back ticks as values to
+#                 declared parameters.
+#
+#
+# REV LIST:
+# DATE         	BY            		MODIFICATION
+# 08/02/2018	Piyush Solanki		IPS-3157: Populate amazon_brand_attribute_cd in attribute file. Added gold__item_package_current_delimiter.
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+num_parallel=1
+
+smith__idrp_item_eligibility_batchdate_delimiter='\\u0001'
+
+work__idrp_item_hierarchy_combined_all_current_delimiter='\\u0001'
+
+gold__item_attribute_relate_current_delimiter='\\u0001'
+
+gold__item_sears_channel_distribution_current_delimiter='\\u0001'
+
+gold__item_core_bridge_item_delimiter='\\u0001'
+
+gold__item_vendor_package_current_delimiter='\\u0001'
+
+###IPS-3157
+gold__item_package_current_delimiter='\\u0001'
+
+work__idrp_prod_mgrtn_delimiter='\\u0001'
+
+output_field_delimiter='\\u0001'
+
+output_hdfs_path=$PROJECT_WORK_DIR/ksn_attribute/current
+
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################
+
+

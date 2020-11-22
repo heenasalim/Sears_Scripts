@@ -1,0 +1,47 @@
+###############################################################################
+#<>                          START HEADER DOCUMENT                          <>#
+###############################################################################
+# SCRIPT NAME:         perform_ie_master_data_work__idrp_ksn_core_bridge_item.param
+# AUTHOR NAME:         Khim Mehta
+# CREATION DATE:       06-16-2015 
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+# IMPORTANT NOTE: This file also serves as shell environment variables file. 
+#                 DO NOT put any pig specific code here.
+#                 ONLY keep parameter name and values
+#                 Shell commands are allowed with back ticks as values to
+#                 declared parameters.
+#
+# DEPENDENCIES: None
+# RESTARTABLE:  N/A
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<<               START COMMON HEADER CODE - DO NOT MANUALLY EDIT           >>#
+###############################################################################
+
+
+###############################################################################
+#<<                          START CUSTOM BODY CODE                         >>#
+###############################################################################
+
+
+
+###############################################################################
+#<<              START COMMON FOOTER CODE - DO NOT MANUALLY EDIT            >>#
+###############################################################################
+
+
+
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

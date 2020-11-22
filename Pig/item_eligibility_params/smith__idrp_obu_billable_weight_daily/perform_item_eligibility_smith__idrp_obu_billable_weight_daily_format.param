@@ -1,0 +1,36 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         perform_item_eligibility_smith__idrp_obu_billable_weight_daily_format.param
+# AUTHOR NAME:         Arjun Dabhade
+# CREATION DATE:       Thu Mar 27 03:47:06 EDT 2014
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+# IMPORTANT NOTE: This file also serves as shell environment variables file. 
+#                 DO NOT put any pig specific code here.
+#                 ONLY keep parameter name and values
+#                 Shell commands are allowed with back ticks as values to
+#                 declared parameters.
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+
+
+
+
+
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

@@ -1,0 +1,39 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         
+# AUTHOR NAME:         Sushauvi Deb
+# CREATION DATE:       Monday June 29 06:55:43 EDT 2014
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+
+WORK__IDRP_KSN_CORE_BRIDGE_ITEM_LOCATION=$PROJECT_WORK_DIR/ksn_core_bridge_item
+
+
+WORK__IDRP_KSN_CORE_BRIDGE_ITEM_SCHEMA='
+load_ts:chararray,
+ksn_id:chararray,
+cost_pointing_method_cd:chararray,
+item_order_system_cd:chararray,
+idrp_batch_id:chararray
+'
+
+
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################
+

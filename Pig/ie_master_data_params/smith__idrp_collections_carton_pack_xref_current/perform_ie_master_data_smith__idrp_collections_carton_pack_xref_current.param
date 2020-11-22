@@ -1,0 +1,35 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         perform_ie_master_data_smith_idrp_collections_carton_pack_xref_current.param
+# AUTHOR NAME:         Priyanka Gurjar
+# CREATION DATE:       Thur Jun 19 12:32 CST 2014
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+# IMPORTANT NOTE: This file also serves as shell environment variables file. 
+#                 DO NOT put any pig specific code here.
+#                 ONLY keep parameter name and values
+#                 Shell commands are allowed with back ticks as values to
+#                 declared parameters.
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+NUM_PARALLEL=1
+FIELD_DELIMITER_CONTROL_A='\\u0001'
+output_hdfs_path=$PROJECT_WORK_DIR/ie_master_data/collections_carton_pack_xref_current/load_ready_file
+
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

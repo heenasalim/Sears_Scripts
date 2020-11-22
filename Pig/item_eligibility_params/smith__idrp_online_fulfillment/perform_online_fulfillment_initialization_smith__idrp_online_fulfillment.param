@@ -1,0 +1,39 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         perform_online_fulfillment_initialization_smith__idrp_online_fulfillment.param
+# AUTHOR NAME:         Arjun Dabhade
+# CREATION DATE:       Tue Nov 26 05:25:41 EST 2013
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+# IMPORTANT NOTE: This file also serves as shell environment variables file. 
+#                 DO NOT put any pig specific code here.
+#                 ONLY keep parameter name and values
+#                 Shell commands are allowed with back ticks as values to
+#                 declared parameters.
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+
+WORK_ERROR_LOCATION=$PROJECT_WORK_DIR/item_eligibility/online_fulfillment/error_online_fulfillment
+
+TEMP_LOCATION=$PROJECT_WORK_DIR/online_fulfillment_temp
+
+WORK_LOCATION=$PROJECT_WORK_DIR/online_fulfillment
+
+WORK__IDRP_ELIGIBLE_ITEM_PART_3=$PROJECT_WORK_DIR/item_eligibility/item/online_fulfillment/stage3
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

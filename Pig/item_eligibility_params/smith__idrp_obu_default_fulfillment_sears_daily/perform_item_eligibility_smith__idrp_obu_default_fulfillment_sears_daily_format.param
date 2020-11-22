@@ -1,0 +1,36 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         perform_item_eligibility_smith__idrp_obu_default_fulfillment_sears_daily_format.param
+# AUTHOR NAME:         Arjun Dabhade
+# CREATION DATE:       Fri Feb 14 05:24:40 EST 2014
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+# IMPORTANT NOTE: This file also serves as shell environment variables file. 
+#                 DO NOT put any pig specific code here.
+#                 ONLY keep parameter name and values
+#                 Shell commands are allowed with back ticks as values to
+#                 declared parameters.
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+
+
+
+
+
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

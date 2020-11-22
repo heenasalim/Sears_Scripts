@@ -1,0 +1,32 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         perform_ie_master_data_work__idrp_sears_exploding_assortment_master_final_transformation.param
+# AUTHOR NAME:         Mayank Agarwal
+# CREATION DATE:       Tue Jun 17, 2014
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+# IMPORTANT NOTE: This file also serves as shell environment variables file. 
+#                 DO NOT put any pig specific code here.
+#                 ONLY keep parameter name and values
+#                 Shell commands are allowed with back ticks as values to
+#                 declared parameters.
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+num_parallel = 1
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

@@ -1,0 +1,36 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         perform_online_fulfillment_initialization_smith__idrp_online_billable_weight.param
+# AUTHOR NAME:         Arjun Dabhade
+# CREATION DATE:       Thu Nov 28 00:18:47 EST 2013
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+# IMPORTANT NOTE: This file also serves as shell environment variables file. 
+#                 DO NOT put any pig specific code here.
+#                 ONLY keep parameter name and values
+#                 Shell commands are allowed with back ticks as values to
+#                 declared parameters.
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+WORK_ERROR_LOCATION=$PROJECT_SMITH_DIR/item_eligibility_online_process_error/
+
+TEMP_LOCATION=$PROJECT_WORK_DIR/online_billable_weight_temp
+
+WORK_LOCATION=$PROJECT_WORK_DIR/online_billable_weight
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

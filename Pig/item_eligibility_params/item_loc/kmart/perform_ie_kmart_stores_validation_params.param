@@ -1,0 +1,116 @@
+JARPATH = /appl/hdidrp/lib/IdrpIntegrationPigUdf.jar
+
+num_parallel = 99
+batch_id = 1
+
+validation_string = '\'item:isnull:\',item,\'loc:isnull:\',loc,\'purch_stat_cd:isnull:\',purch_stat_cd,\'srs_div_no:number:\',srs_div_no,\'srs_itm_no:number:\',srs_itm_no,\'srs_sku_no:number:\',srs_sku_no,\'srs_location_nbr:number:\',srs_location_nbr'
+
+processed_hdfs_path = /work/idrp/stores/kmart_stores_final_output_gen/*
+
+processed_hdfs_schema = 'item:chararray,\
+                                        loc:chararray,\
+					src_owner_cd:chararray,\
+                                        elig_sts_cd:chararray,\
+                                        src_pack_qty:chararray,\
+                                        src_loc:chararray,\
+                                        po_vnd_no:chararray,\
+                                        ksn_id:chararray,\
+                                        purch_stat_cd:chararray,\
+                                        retail_crtn_intrnl_pack_qty:chararray,\
+                                        days_to_check_begin_date:chararray,\
+                                        days_to_check_end_date:chararray,\
+                                        dotcom_order_ind:chararray,\
+                                        vend_pack_id:chararray,\
+                                        vend_pack_purch_stat_cd:chararray,\
+                                        vendor_pack_flow_type:chararray,\
+                                        vendor_pack_qty:chararray,\
+                                        recorder_method_code:chararray,\
+                                        str_supplier_cd:chararray,\
+                                        vend_stk_nbr:chararray,\
+                                        ksn_pack_id:chararray,\
+                                        ksn_dc_pack_purch_stat_cd:chararray,\
+                                        inbnd_ord_uom_cd:chararray,\
+                                        enable_jif_dc_ind:chararray,\
+                                        stk_ind:chararray,\
+                                        crtn_per_layer_qty:chararray,\
+                                        layer_per_pall_qty:chararray,\
+                                        dc_config_cd:chararray,\
+                                        imp_fl:chararray,\
+                                        srs_div_no:chararray,\
+                                        srs_itm_no:chararray,\
+                                        srs_sku_no:chararray,\
+                                        srs_location_nbr:chararray,\
+                                        srs_source_nbr:chararray,\
+                                        rim_sts_cd:chararray,\
+                                        non_stock_source_cd:chararray,\
+                                        item_active_ind:chararray,\
+                                        item_reserve_cd:chararray,\
+                                        item_next_period_on_hand_qty:chararray,\
+                                        item_reserve_qty:chararray,\
+                                        item_back_order_qty:chararray,\
+                                        item_next_period_future_order_qty:chararray,\
+                                        item_on_order_qty:chararray,\
+                                        item_next_period_in_transit_qty:chararray,\
+                                        item_last_receive_dt:chararray,\
+                                        item_last_ship_dt:chararray,\
+                                        stk_typ_cd:chararray,\
+					batchid:chararray'
+
+processed_hdfs_fields = 'item,\
+                                        loc,\
+					src_owner_cd,\
+                                        elig_sts_cd,\
+                                        src_pack_qty,\
+                                        src_loc,\
+                                        po_vnd_no,\
+                                        ksn_id,\
+                                        purch_stat_cd,\
+                                        retail_crtn_intrnl_pack_qty,\
+                                        days_to_check_begin_date,\
+                                        days_to_check_end_date,\
+                                        dotcom_order_ind,\
+                                        vend_pack_id,\
+                                        vend_pack_purch_stat_cd,\
+                                        vendor_pack_flow_type,\
+                                        vendor_pack_qty,\
+                                        recorder_method_code,\
+                                        str_supplier_cd,\
+                                        vend_stk_nbr,\
+                                        ksn_pack_id,\
+                                        ksn_dc_pack_purch_stat_cd,\
+                                        inbnd_ord_uom_cd,\
+                                        enable_jif_dc_ind,\
+                                        stk_ind,\
+                                        crtn_per_layer_qty,\
+                                        layer_per_pall_qty,\
+                                        dc_config_cd,\
+                                        imp_fl,\
+                                        srs_div_no,\
+                                        srs_itm_no,\
+                                        srs_sku_no,\
+                                        srs_location_nbr,\
+                                        srs_source_nbr,\
+                                        rim_sts_cd,\
+                                        non_stock_source_cd,\
+                                        item_active_ind,\
+                                        item_reserve_cd,\
+                                        item_next_period_on_hand_qty,\
+                                        item_reserve_qty,\
+                                        item_back_order_qty,\
+                                        item_next_period_future_order_qty,\
+                                        item_on_order_qty,\
+                                        item_next_period_in_transit_qty,\
+                                        item_last_receive_dt,\
+                                        item_last_ship_dt,\
+                                        stk_typ_cd,\
+					batchid'
+
+
+business_hdfs_path = /work/idrp/store/valid_output
+
+error_hdfs_path = /work/idrp/store/item_error
+
+audit_hdfs_path = /work/idrp/store/item_audit
+
+input_table_delimiter = '\'\\u0001\''
+output_table_delimiter = '\'|\''

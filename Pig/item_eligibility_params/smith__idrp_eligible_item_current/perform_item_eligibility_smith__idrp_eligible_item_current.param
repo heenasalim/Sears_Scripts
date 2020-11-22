@@ -1,0 +1,50 @@
+###############################################################################
+#<>                          START HEADER DOCUMENT                          <>#
+###############################################################################
+# SCRIPT NAME:         perform_item_eligibility_smith__idrp_eligible_item_current.param
+# AUTHOR NAME:         Mudit Mangal
+# CREATION DATE:       07-07-2014 06:20
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+# IMPORTANT NOTE: This file also serves as shell environment variables file. 
+#                 DO NOT put any pig specific code here.
+#                 ONLY keep parameter name and values
+#                 Shell commands are allowed with back ticks as values to
+#                 declared parameters.
+#
+# DEPENDENCIES: None
+# RESTARTABLE:  N/A
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<<               START COMMON HEADER CODE - DO NOT MANUALLY EDIT           >>#
+###############################################################################
+
+CURRENT_TIMESTAMP_AT_6_PM=`date '+%Y-%m-%d 18:00:00'`
+
+WORK__IDRP_ELIGIBLE_ITEM_CURRENT_PART_1=$PROJECT_WORK_DIR/item_eligibility/item_current/stage1
+
+WORK__IDRP_ELIGIBLE_ITEM_CURRENT_PART_2=$PROJECT_WORK_DIR/item_eligibility/item_current/stage2
+
+WORK__IDRP_ELIGIBLE_ITEM_CURRENT_PART_3=$PROJECT_WORK_DIR/item_eligibility/item_current/stage3
+
+WORK__IDRP_ELIGIBLE_ITEM_CURRENT_PART_4=$PROJECT_WORK_DIR/item_eligibility/item_current/stage4
+
+WORK__IDRP_ONLINE_FULFILLMENT_LOCATION=$PROJECT_WORK_DIR/online_fulfillment_temp
+
+WORK__IDRP_ONLINE_BILLABLE_WEIGHT_LOCATION=$PROJECT_WORK_DIR/online_billable_weight_temp
+
+WORK__IDRP_ELIGIBLE_ITEM_CURRENT_ERROR=$PROJECT_WORK_DIR/item_eligibility/item_current/error_eligible_item
+
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

@@ -1,0 +1,7 @@
+NUM_PARALLEL=99
+FIELD_DELIMITER="\u0001"
+
+kmart_store="/work/idrp/stores/kmart_stores_final_output_gen/*"
+kmart_dc="/work/idrp/dc/SMITH__IDRP_ELIGIBLE_ITEM_LOC/*"
+#kmart_vendor="/work/idrp/vendor/kmart_vendor_final_output/*"
+#import_centre="/work/idrp/deconsolidation_center/*"

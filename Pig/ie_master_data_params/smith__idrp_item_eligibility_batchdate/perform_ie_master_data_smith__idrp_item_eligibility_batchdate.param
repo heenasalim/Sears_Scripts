@@ -1,0 +1,31 @@
+#!/bin/bash
+###############################################################################
+#<>                                HEADER                                   <>#
+###############################################################################
+# SCRIPT NAME:         perform_ie_master_data_smith__idrp_item_eligibility_batchdate.param
+# AUTHOR NAME:         Nava Jyothi samudrala
+# CREATION DATE:       11-06-2014 10:38
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+# IMPORTANT NOTE: This file also serves as shell environment variables file.
+#                 DO NOT put any pig specific code here.
+#                 ONLY keep parameter name and values
+#                 Shell commands are allowed with back ticks as values to
+#                 declared parameters.
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                  BODY                                   <>#
+###############################################################################
+
+###############################################################################
+#<>                                  END                                    <>#
+###############################################################################

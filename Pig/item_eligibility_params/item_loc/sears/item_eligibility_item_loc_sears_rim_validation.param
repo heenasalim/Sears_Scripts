@@ -1,0 +1,64 @@
+JARPATH = /appl/hdidrp/lib/IdrpIntegrationPigUdf.jar
+
+num_parallel = 99
+
+validation_string = '\'item:isnull:\',item,\'loc:isnull:\',loc,\'store_pack_size_qty:ge:0\',store_pack_size_qty,\'srs_division_nbr:number:\',srs_division_nbr,\'srs_item_nbr:number:\',srs_item_nbr,\'srs_sku_cd:number:\',srs_sku_cd,\'store_nbr:number:\',store_nbr,\'source_nbr:number:\',source_nbr,\'status_cd:lovstr:C,L,E,R,P,S,D,F,T,Q,X,Z\',status_cd'
+
+processed_hdfs_path = /work/idrp/item_eligibility/item_loc/sears/rim/join_output
+
+processed_hdfs_schema = 'item:chararray,\
+loc:chararray,\
+srs_loc:chararray,\
+srs_vndr_nbr:chararray,\
+loc_lvl_cd:chararray,\
+loc_fmt_typ_cd:chararray,\
+fmt_typ_cd:chararray,\
+fmt_sub_typ_cd:chararray,\
+status_cd:chararray,\
+easy_ord_fl:chararray,\
+whse_sizing:chararray,\
+cross_mdse_attr_cd:chararray,\
+store_pack_size_qty:chararray,\
+ksn_id:chararray,\
+import_cd:chararray,\
+srs_division_nbr:chararray,\
+srs_item_nbr:chararray,\
+srs_sku_cd:chararray,\
+store_nbr:chararray,\
+warehouse_nbr:chararray,\
+vendor_nbr:chararray,\
+source_nbr:chararray'
+
+processed_hdfs_fields = 'item,\
+loc,\
+srs_loc,\
+srs_vndr_nbr,\
+loc_lvl_cd,\
+loc_fmt_typ_cd,\
+fmt_typ_cd,\
+fmt_sub_typ_cd,\
+status_cd,\
+easy_ord_fl,\
+whse_sizing,\
+cross_mdse_attr_cd,\
+store_pack_size_qty,\
+ksn_id,\
+import_cd,\
+srs_division_nbr,\
+srs_item_nbr,\
+srs_sku_cd,\
+store_nbr,\
+warehouse_nbr,\
+vendor_nbr,\
+source_nbr'
+
+business_hdfs_path = /work/idrp/item_eligibility/item_loc/sears/rim/validation_output
+
+error_hdfs_path = /work/idrp/item_eligibility/item_loc/sears/rim/error_output
+
+audit_hdfs_path = /work/idrp/item_eligibility/item_loc/sears/rim/audit_output
+
+input_table_delimiter = '\'\\u0001\''
+
+output_table_delimiter = '\'|\''
+

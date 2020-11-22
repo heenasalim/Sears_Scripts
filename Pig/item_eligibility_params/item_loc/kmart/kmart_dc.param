@@ -1,0 +1,15 @@
+JARPATH = /appl/hdidrp/lib/IdrpIntegrationPigUdf.jar
+num_parallel = 99
+field_delimiter_a="\u0001"
+
+join_loc_gen_join_item_dc_locn_ksn_pk_aprk_eql="/work/idrp/dc/join_loc_gen_join_item_dc_locn_ksn_pk_aprk_eql"
+
+inforem_dc_inbound_vend_pack_file="/incoming/idrp/MF_files/INFOREM_DC_INBOUND_VEND_PACK/*"
+gold__item_vendor_package_current="/gold/item/vendor_package/current/*"
+gold__item_kmart_vendor_package_dc_location="/gold/item/kmart_vendor_package_dc_location/record_status=active/*"
+gold__item_aprk_current="/gold/item/aprk/current/*"
+gold__item_kmart_ksn_dc_package="/gold/item/kmart_ksn_dc_package/record_status=active/*"
+smith__idrp_eligible_dc_loc="/incoming/idrp/dc_locn/*"
+smith__idrp_eligible_item="/work/idrp/item_eligibility/item/current/*"
+smith__idrp_eligible_loc="/smith/idrp/eligible_loc/*"
+

@@ -1,0 +1,56 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         perform_item_eligibility_smith__idrp_space_planning_authorized_vendor_package_stores.param
+# AUTHOR NAME:         Onkar Malewadikar
+# CREATION DATE:       Mon May 26 06:16:37 EDT 2014
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+# IMPORTANT NOTE: This file also serves as shell environment variables file. 
+#                 DO NOT put any pig specific code here.
+#                 ONLY keep parameter name and values
+#                 Shell commands are allowed with back ticks as values to
+#                 declared parameters.
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+
+SPACE_PLANNING_SG_GDTU100_DTCITEM_LOCATION=$SMITH_DIR/space_planning/archive/prev_*/SG.GDTU100.DTCITEM
+
+SPACE_PLANNING_HIER_ITEM_LOCATION=$SMITH_DIR/space_planning/current/hier_item
+
+SPACE_PLANNING_SG_DDTN090_RPITEMS3_LOCATION=$SMITH_DIR/space_planning/archive/prev_*/SG.DDTN090.RPITEMS
+
+SPACE_PLANNING_C_KSN_LOCATION=$SMITH_DIR/space_planning/current/c_ksn2
+
+SPACE_PLANNING_C_VEND_PACK_LOCATION=$SMITH_DIR/space_planning/current/c_vend_pack2
+
+SPACE_PLANNING_SBT_VEND_PACKS_LOCATION=$SMITH_DIR/space_planning/current/sbt_vend_packs
+
+SPACE_PLANNING_SBT_ORD_PT_LOCATION=$SMITH_DIR/space_planning/current/sbt_ord_pt
+
+SPACE_PLANNING_MDL_STR_LOCATION=$SMITH_DIR/space_planning/current/mdl_str
+
+SPACE_PLANNING_MSTR_LOCN_LOCATION=$SMITH_DIR/space_planning/current/mstr_locn
+
+SPACE_PLANNING_SBT_LAUNCH_STR_LOCATION=$SMITH_DIR/space_planning/current/sbt_launch_str
+
+
+
+
+
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

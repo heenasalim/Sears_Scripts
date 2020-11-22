@@ -1,0 +1,96 @@
+# input table delimiter
+input_table_delimiter = '\'\\u0001\''
+input_table_delimiter_tab = '\'\\t\''
+
+num_parallel = 99
+
+#JARPATH
+JARPATH = /appl/hdidrp/lib/IdrpIntegrationPigUdf.jar
+
+# output table delimiter
+output_table_delimiter = '\'\\u0001\''
+
+#output hdfs path rim join
+io_hdfs_path_rim_join =  idrp/item_eligibility/item_loc/sears/rim/join_output
+
+#output hdfs path rim validation
+io_hdfs_path_rim_validation_data =  idrp/item_eligibility/item_loc/sears/rim/validation_output
+
+#output hdfs path rim validation
+io_hdfs_path_rim_validation_audit =  idrp/item_eligibility/item_loc/sears/rim/audit_output
+
+#output hdfs path rim validation
+io_hdfs_path_rim_validation_error =  idrp/item_eligibility/item_loc/sears/rim/error_output
+
+#output hdfs path rim transformation
+output_hdfs_path_rim =  idrp/item_eligibility/item_loc/sears/rim/transformation_output/
+
+#output hdfs path dos join
+io_hdfs_path_dos_join =  idrp/item_eligibility/item_loc/sears/dos/join_output
+
+#output hdfs path dos validation
+io_hdfs_path_dos_validation_data =  idrp/item_eligibility/item_loc/sears/dos/validation_output
+
+#output hdfs path dos validation
+io_hdfs_path_dos_validation_audit =  idrp/item_eligibility/item_loc/sears/dos/audit_output
+
+#output hdfs path dos validation
+io_hdfs_path_dos_validation_error =  idrp/item_eligibility/item_loc/sears/dos/error_output
+
+#output hdfs path dos transformation
+output_hdfs_path_dos =  idrp/item_eligibility/item_loc/sears/dos/transformation_output/
+
+#output hdfs path  srim join
+io_hdfs_path_srim_join =  idrp/item_eligibility/item_loc/sears/srim/join_output
+
+#output hdfs path srim validation
+io_hdfs_path_srim_validation_data =  idrp/item_eligibility/item_loc/sears/srim/validation_output
+
+#output hdfs path srim validation
+io_hdfs_path_srim_validation_audit =  idrp/item_eligibility/item_loc/sears/srim/audit_output
+
+#output hdfs path srim validation
+io_hdfs_path_srim_validation_error =  idrp/item_eligibility/item_loc/sears/srim/error_output
+
+#output hdfs path srim transformation
+output_hdfs_path_srim =  idrp/item_eligibility/item_loc/sears/srim/transformation_output/
+
+#output hdfs path union
+output_hdfs_path_union =  idrp/item_eligibility/item_loc/sears/combine/
+
+#rim table input path
+rim_input_hdfs_path =  inventory/rim/rim_daily_inventory_current/data_center*/part*
+
+#srim table input path
+srim_input_hdfs_path =  inventory/srim/daily_inventory
+
+#dos facility table input path
+dos_facility_input_hdfs_path =  inventory/dc/sears_item_facility/current
+
+#dos owner table input path
+dos_owner_input_hdfs_path =  inventory/dc/sears_item_owner_current
+
+#smith item table input path
+smith_item_input_hdfs_path =  item/hierarchy/current
+
+#vendor package table input path
+vendor_package_input_hdfs_path =  item/vendor_package/current/part*
+
+#eligible item table input path
+eligible_item_input_hdfs_path =  idrp/item_eligibility/item/current
+
+#eligible loc table input path
+eligible_loc_input_hdfs_path =  idrp/eligible_loc
+
+#eligible item loc table input path
+eligible_item_loc_input_hdfs_path =  idrp/item_eligibility/item_loc/sears/combine
+
+#dummy vendor warehouse reference table input path
+dummy_vendor_whse_ref_input_hdfs_path =  idrp/item_eligibility/item_loc/sears/dummy_vend/*
+
+# current date
+TODAY = `date +"%Y-%m-%d"`
+
+# current timestamp
+CURRENT_TIMESTAMP = `date +"%Y-%m-%d %H:%M:%S"`
+

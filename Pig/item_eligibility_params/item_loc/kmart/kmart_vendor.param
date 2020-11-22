@@ -1,0 +1,15 @@
+JARPATH = /appl/hdidrp/lib/IdrpIntegrationPigUdf.jar
+
+NUM_PARALLEL = 99
+FIELD_DELIMITER_A="\u0001"
+
+
+GOLD__ITEM_VENDOR_PACKAGE_CURRENT="/gold/item/vendor_package/current/*"
+GOLD__ITEM_SHC_HIERARCHY_CURRENT="/gold/item/shc/shc_item_hier/current/*"
+GOLD__ITEM_APRK_CURRENT="/gold/item/aprk/current/*"
+SMITH__IDRP_ELIGIBLE_ITEM="/work/idrp/item_eligibility/item/current/*"
+SMITH__IDRP_ELIGIBLE_LOC="/smith/idrp/eligible_loc/*"
+GOLD__ITEM_KMART_VENDOR_PACKAGE_DC_LOCATION="/gold/item/kmart_vendor_package_dc_location/record_status=active/*"
+
+
+JOIN_IE_ITEM_IE_LOC="/work/idrp/vendor/join_IE_item_IE_loc"

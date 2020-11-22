@@ -1,0 +1,17 @@
+smith__idrp_eligible_item_loc_path=/idrp/kmart/combine/all_kmart_union
+
+smith__idrp_eligible_loc_path=/idrp/eligible_loc
+
+INPUT_FIELD_DELIMITER=\\u0001
+
+vendor_output_path=/idrp/kmart_sears/combine/item_loc_data
+
+OUTPUT_FIELD_DELIMITER=\\u0001
+
+NO_OF_REDUCERS=97
+
+SMITH_DIR=/smith
+
+GOLD_DIR=/gold
+
+WORK_DIR=/work

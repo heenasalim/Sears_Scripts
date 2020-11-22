@@ -1,0 +1,31 @@
+#!/bin/bash
+###############################################################################
+#<>                                HEADER                                   <>#
+###############################################################################
+# SCRIPT NAME:         perform_mips1_smith__idrp_vend_pack_dc_combined.param
+# AUTHOR NAME:         Arjun Dabhade
+# CREATION DATE:       03-09-2013 04:35
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+# IMPORTANT NOTE: This file also serves as shell environment variables file.
+#                 DO NOT put any pig specific code here.
+#                 ONLY keep parameter name and values
+#                 Shell commands are allowed with back ticks as values to
+#                 declared parameters.
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                  BODY                                   <>#
+###############################################################################
+
+###############################################################################
+#<>                                  END                                    <>#
+###############################################################################

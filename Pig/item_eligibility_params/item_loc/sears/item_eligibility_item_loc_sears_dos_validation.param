@@ -1,0 +1,77 @@
+JARPATH = /appl/hdidrp/lib/IdrpIntegrationPigUdf.jar
+
+num_parallel = 99
+
+validation_string = '\'item:isnull:\',item,\'loc:isnull:\',loc,\'srs_division_nbr:number:\',srs_division_nbr,\'srs_item_nbr:number:\',srs_item_nbr,\'srs_sku_cd:number:\',srs_sku_cd,\'dos_warehouse_nbr:number:\',dos_warehouse_nbr,\'item_active_ind:lovstr:Y,N\',item_active_ind,\'item_reserve_cd:lovnum:1,2,4\',item_reserve_cd,\'item_next_period_on_hand_qty:number:\',item_next_period_on_hand_qty,\'item_reserve_qty:number:\',item_reserve_qty,\'item_back_order_qty:number:\',item_back_order_qty,\'item_next_period_future_order_qty:number:\',item_next_period_future_order_qty,\'item_on_order_qty:number:\',item_on_order_qty,\'item_next_period_in_transit_qty:number:\',item_next_period_in_transit_qty'
+
+processed_hdfs_path = /work/idrp/item_eligibility/item_loc/sears/dos/join_output
+
+processed_hdfs_schema = 'item:chararray,\
+loc:chararray,\
+srs_loc:chararray,\
+srs_vndr_nbr:chararray,\
+loc_lvl_cd:chararray,\
+easy_ord_fl:chararray,\
+spc_ord_cdt_fl:chararray,\
+itm_emp_fl:chararray,\
+loc_fmt_typ_cd:chararray,\
+item_active_ind:chararray,\
+item_next_period_on_hand_qty:chararray,\
+item_on_order_qty:chararray,\
+item_reserve_qty:chararray,\
+item_back_order_qty:chararray,\
+item_next_period_future_order_qty:chararray,\
+item_next_period_in_transit_qty:chararray,\
+item_last_receive_dt:chararray,\
+item_last_ship_dt:chararray,\
+non_stock_source_cd:chararray,\
+item_reserve_cd:chararray,\
+src_pack_qty:chararray,\
+ksn_id:chararray,\
+import_cd:chararray,\
+srs_division_nbr:chararray,\
+srs_item_nbr:chararray,\
+srs_sku_cd:chararray,\
+dos_warehouse_nbr:chararray,\
+srs_source_nbr:chararray'
+
+processed_hdfs_fields = 'item,\
+loc,\
+srs_loc,\
+srs_vndr_nbr,\
+loc_lvl_cd,\
+easy_ord_fl,\
+spc_ord_cdt_fl,\
+itm_emp_fl,\
+loc_fmt_typ_cd,\
+item_active_ind,\
+item_next_period_on_hand_qty,\
+item_on_order_qty,\
+item_reserve_qty,\
+item_back_order_qty,\
+item_next_period_future_order_qty,\
+item_next_period_in_transit_qty,\
+item_last_receive_dt,\
+item_last_ship_dt,\
+non_stock_source_cd,\
+item_reserve_cd,\
+src_pack_qty,\
+ksn_id,\
+import_cd,\
+srs_division_nbr,\
+srs_item_nbr,\
+srs_sku_cd,\
+dos_warehouse_nbr,\
+srs_source_nbr'
+
+business_hdfs_path = /work/idrp/item_eligibility/item_loc/sears/dos/validation_output
+
+error_hdfs_path = /work/idrp/item_eligibility/item_loc/sears/dos/error_output
+
+audit_hdfs_path = /work/idrp/item_eligibility/item_loc/sears/dos/audit_output
+
+input_table_delimiter = '\'\\u0001\''
+
+output_table_delimiter = '\'|\''
+
+

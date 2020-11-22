@@ -1,0 +1,51 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         perform_item_eligibility_smith__idrp_eligible_item_1.param
+# AUTHOR NAME:         Onkar Malewadikar
+# CREATION DATE:       Mon Oct 14 11:17:13 EDT 2013
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+# IMPORTANT NOTE: This file also serves as shell environment variables file. 
+#                 DO NOT put any pig specific code here.
+#                 ONLY keep parameter name and values
+#                 Shell commands are allowed with back ticks as values to
+#                 declared parameters.
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+CURRENT_TIMESTAMP_AT_6_PM=`date '+%Y-%m-%d 18:00:00'`
+
+#TODO instead of /work/idrp/item_eligibility/item/last
+WORK__IDRP_ELIGIBLE_ITEM_2_LOCATION=$PROJECT_WORK_DIR/item_eligibility/item/last
+WORK__IDRP_ELIGIBLE_ITEM_1_LOCATION=$PROJECT_WORK_DIR/item_eligibility/item/current
+WORK__IDRP_ELIGIBLE_ITEM_COMPARISION_LOCATION=$PROJECT_WORK_DIR/eligible_item_comparision
+WORK__IDRP_ELIGIBLE_ITEM_LOCATION=$PROJECT_WORK_DIR/item_eligibility/item/last
+
+WORK__IDRP_ELIGIBLE_ITEM_PART_1=$PROJECT_WORK_DIR/item_eligibility/item/online_fulfillment/stage1
+
+WORK__IDRP_ELIGIBLE_ITEM_PART_2=$PROJECT_WORK_DIR/item_eligibility/item/online_fulfillment/stage2
+
+WORK__IDRP_ONLINE_FULFILLMENT_LOCATION=$PROJECT_WORK_DIR/online_fulfillment_temp
+
+WORK__IDRP_ONLINE_BILLABLE_WEIGHT_LOCATION=$PROJECT_WORK_DIR/online_billable_weight_temp
+
+WORK__IDRP_ELIGIBLE_ITEM_PART_3=$PROJECT_WORK_DIR/item_eligibility/item/online_fulfillment/stage3
+
+WORK__IDRP_ELIGIBLE_ITEM_ERROR=$PROJECT_WORK_DIR/item_eligibility/online_fulfillment/error_eligible_item
+
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

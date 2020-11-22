@@ -1,0 +1,6 @@
+NUM_PARALLEL=99
+FIELD_DELIMITER="\u0001"
+
+kmart_union="/work/idrp/kmart/combine/all_kmart_union/*"
+#sears_union="/work/idrp/vendor_output/*"
+import_centre="/work/idrp/deconsolidation_center/*"

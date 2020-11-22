@@ -1,0 +1,43 @@
+###############################################################################
+#<>                                HEADER                                   <>#
+###############################################################################
+# SCRIPT NAME:         smith__idrp_vend_pack_combined.schema
+# AUTHOR NAME:         Abhijeet Shingate
+# CREATION DATE:       Thu Dec 12 13:10:37 IST 2013
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+# SOURCE SCHEMA TYPE: Hive
+# SOURCE SCHEMA NAME: smith__idrp_vend_pack_combined
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                 BODY                                    <>#
+###############################################################################
+
+WORK_IDRP_SEARS_EXPLO_ASSRTMNT_MASTER_FINAL_LOCATION=$PROJECT_WORK_DIR/ie_master_data/work__idrp_sears_exploding_assortment_master_final/load_ready_file/
+
+WORK_IDRP_SEARS_EXPLO_ASSRTMNT_MASTER_FINAL_SCHEMA='exploding_assortment_ksn_id:chararray ,
+													sears_division_nbr:chararray ,
+													sears_item_nbr:chararray ,
+													sears_sku_nbr:chararray ,
+													order_duns_nbr:chararray ,
+													exploding_assortment_type_cd:chararray ,
+													rimflow_jit_ind:chararray ,
+													component_count_nbr:chararray ,
+													component_sears_division_nbr:chararray ,
+													component_sears_item_nbr:chararray ,
+													component_sears_sku_nbr:chararray ,
+													component_ksn_id:chararray ,
+													component_qty:chararray 
+																			'
+
+###############################################################################
+#<>                                  END                                    <>#
+###############################################################################
