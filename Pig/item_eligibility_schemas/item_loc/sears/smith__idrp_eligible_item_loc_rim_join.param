@@ -1,0 +1,23 @@
+smith__idrp_eligible_item_loc_rim_join ='item:chararray,\
+loc:chararray,\
+srs_loc:chararray,\
+srs_vndr_nbr:chararray,\
+loc_lvl_cd:chararray,\
+loc_fmt_typ_cd:chararray,\
+fmt_typ_cd:chararray,\
+fmt_sub_typ_cd:chararray,\
+status_cd:chararray,\
+easy_ord_fl:chararray,\
+whse_sizing:chararray,\
+cross_mdse_attr_cd:chararray,\
+store_pack_size_qty:chararray,\
+ksn_id:chararray,\
+import_cd:chararray,\
+srs_division_nbr:chararray,\
+srs_item_nbr:chararray,\
+srs_sku_cd:chararray,\
+store_nbr:chararray,\
+warehouse_nbr:chararray,\
+vendor_nbr:chararray,\
+source_nbr:chararray'
+

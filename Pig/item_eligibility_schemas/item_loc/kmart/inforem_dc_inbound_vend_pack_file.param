@@ -1,0 +1,8 @@
+INFOREM_DC_INBOUND_VEND_PACK_FILE_SCHEMA='inbnd_item_id:chararray,\
+						inbnd_dc_locn_nbr:chararray,\	
+						inbnd_vend_pack_id:chararray,\	
+						inbnd_ship_duns_nbr:chararray,\
+						inbnd_reord_ins_date:chararray,\	
+						inbnd_store_count:chararray,\	
+						inbnd_orderable_ndc:chararray,\	
+						filler:chararray'

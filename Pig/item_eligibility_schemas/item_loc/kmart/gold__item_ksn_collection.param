@@ -1,0 +1,8 @@
+GOLD__ITEM_KSN_COLLECTION_SCHEMA='load_ts:chararray,\
+                                    external_ksn_id:chararray,\
+                                    internal_ksn_id:chararray,\
+                                    effective_ts:chararray,\
+                                    expiration_ts:chararray,\
+                                    internal_qty:chararray,\
+                                    ksn_collection_alternate_id:chararray,\
+                                    last_change_user_id:chararray'

@@ -1,0 +1,150 @@
+###############################################################################
+#<>                                HEADER                                   <>#
+###############################################################################
+# SCRIPT NAME:         work__idrp_store_level_vend_pack_loc_final.schema
+# AUTHOR NAME:         Arjun Dabhade
+# CREATION DATE:       Tue Apr 29 13:10:42 IST 2014
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+# SOURCE SCHEMA TYPE: Hive
+# SOURCE SCHEMA NAME: work__idrp_store_level_vend_pack_loc_final
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                 BODY                                    <>#
+###############################################################################
+
+WORK__IDRP_STORE_LEVEL_VEND_PACK_LOC_FINAL_LOCATION=$PROJECT_WORK_DIR/store_level_vend_pack_loc_final
+WORK__IDRP_POST_KMART_MARKDOWN_PROCESS_ALLOC_REPLN_LOCATION=$PROJECT_WORK_DIR/item_eligibility/kmtvndrpklocn/post_kmart_markdown_process_alloc_repln
+
+WORK__IDRP_POST_KMART_MARKDOWN_PROCESS_ALLOC_REPLN_SCHEMA='shc_item_id:chararray,
+sears_division_nbr:chararray,
+sears_item_nbr:chararray,
+sears_sku_nbr:chararray,
+shc_item_type_cd:chararray,
+network_distribution_cd:chararray,
+can_carry_model_id:chararray,
+item_purchase_status_cd:chararray,
+sears_order_system_cd:chararray,
+idrp_order_method_cd:chararray,
+idrp_order_method_desc:chararray,
+ksn_id:chararray,
+vendor_package_id:chararray,
+vendor_package_purchase_status_cd:chararray,
+vendor_package_purchase_status_dt:chararray,
+vendor_package_owner_cd:chararray,
+ksn_package_id:chararray,
+service_area_restriction_model_id:chararray,
+flow_type_cd:chararray,
+aprk_id:chararray,
+import_ind:chararray,
+order_duns_nbr:chararray,
+vendor_carton_qty:chararray,
+vendor_stock_nbr:chararray,
+carton_per_layer_qty:chararray,
+layer_per_pallet_qty:chararray,
+ksn_purchase_status_cd:chararray,
+dotcom_allocation_ind:chararray,
+store_location_nbr:chararray,
+days_to_check_begin_day_qty:chararray,
+days_to_check_end_day_qty:chararray,
+days_to_check_begin_dt:chararray,
+days_to_check_end_dt:chararray,
+location_format_type_cd:chararray,
+format_type_cd:chararray,
+location_level_cd:chararray,
+location_owner_cd:chararray,
+scan_based_trading_ind:chararray,
+cross_merchandising_cd:chararray,
+servicing_dc_nbr:chararray,
+source_location_nbr:chararray,
+dc_effective_dt:chararray,
+purchase_order_vendor_location_id:chararray,
+source_location_level_cd:chararray,
+retail_carton_vendor_package_id:chararray,
+retail_carton_internal_package_qty:chararray,
+ksn_dc_package_purchase_status_cd:chararray,
+ksn_dc_package_purchase_status_dt:chararray,
+stock_ind:chararray,
+substitution_eligible_ind:chararray,
+outbound_package_qty:chararray,
+enable_jif_dc_ind:chararray,
+source_package_qty:chararray,
+sears_location_nbr:chararray,
+sears_source_location_nbr:chararray,
+dc_configuration_cd:chararray,
+kmart_markdown_ind:chararray,
+allocation_replenishment_cd:chararray'
+
+WORK__IDRP_STORE_LEVEL_VEND_PACK_LOC_FINAL_SCHEMA='
+                                                   shc_item_id:chararray,
+                                                   sears_division_nbr:chararray,
+                                                   sears_item_nbr:chararray,
+                                                   sears_sku_nbr:chararray,
+                                                   shc_item_type_cd:chararray,
+                                                   network_distribution_cd:chararray,
+                                                   can_carry_model_id:chararray,
+                                                   item_purchase_status_cd:chararray,
+                                                   sears_order_system_cd:chararray,
+                                                   idrp_order_method_cd:chararray,
+                                                   idrp_order_method_desc:chararray,
+                                                   ksn_id:chararray,
+                                                   vendor_package_id:chararray,
+                                                   vendor_package_purchase_status_cd:chararray,
+                                                   vendor_package_purchase_status_dt:chararray,
+                                                   vendor_package_owner_cd:chararray,
+                                                   ksn_package_id:chararray,
+                                                   service_area_restriction_model_id:chararray,
+                                                   flow_type_cd:chararray,
+                                                   aprk_id:chararray,
+                                                   import_ind:chararray,
+                                                   order_duns_nbr:chararray,
+                                                   vendor_carton_qty:chararray,
+                                                   vendor_stock_nbr:chararray,
+                                                   carton_per_layer_qty:chararray,
+                                                   layer_per_pallet_qty:chararray,
+                                                   ksn_purchase_status_cd:chararray,
+                                                   dotcom_allocation_ind:chararray,
+                                                   store_location_nbr:chararray,
+                                                   days_to_check_begin_day_qty:chararray,
+                                                   days_to_check_end_day_qty:chararray,
+                                                   days_to_check_begin_dt:chararray,
+                                                   days_to_check_end_dt:chararray,
+                                                   location_format_type_cd:chararray,
+                                                   format_type_cd:chararray,
+                                                   location_level_cd:chararray,
+                                                   location_owner_cd:chararray,
+                                                   scan_based_trading_ind:chararray,
+                                                   cross_merchandising_cd:chararray,
+                                                   servicing_dc_nbr:chararray,
+                                                   source_location_nbr:chararray,
+                                                   dc_effective_dt:chararray,
+                                                   purchase_order_vendor_location_id:chararray,
+                                                   source_location_level_cd:chararray,
+                                                   retail_carton_vendor_package_id:chararray,
+                                                   retail_carton_internal_package_qty:chararray,
+                                                   ksn_dc_package_purchase_status_cd:chararray,
+                                                   ksn_dc_package_purchase_status_dt:chararray,
+                                                   stock_ind:chararray,
+                                                   substitution_eligible_ind:chararray,
+                                                   outbound_package_qty:chararray,
+                                                   enable_jif_dc_ind:chararray,
+                                                   source_package_qty:chararray,
+                                                   sears_location_nbr:chararray,
+                                                   sears_source_location_nbr:chararray,
+                                                   dc_configuration_cd:chararray,
+                                                   kmart_markdown_ind:chararray,
+                                                   allocation_replenishment_cd:chararray,
+                                                   active_ind:chararray
+                                                  '
+
+###############################################################################
+#<>                                  END                                    <>#
+###############################################################################

@@ -1,0 +1,3 @@
+dummy_vend_whse_ref='vendor_nbr:chararray,\
+vendor_desc:chararray,\
+warehouse_nbr:chararray'

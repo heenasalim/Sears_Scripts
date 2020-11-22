@@ -1,0 +1,58 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         work__idrp_inforem_store_driver.schema
+# AUTHOR NAME:         Abhijeet Shingate
+# CREATION DATE:       Mon Oct 14 05:09:40 EDT 2013
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+# SOURCE SCHEMA TYPE: COPYBOOK
+# SOURCE SCHEMA NAME: INFOREM-STORE-DRIVER.cpbk
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+WORK__IDRP_INFOREM_STORE_DRIVER_COPYBOOK_LOCAL_LOCATION=$MAINFRAME_COPYBOOKS_LOCAL_DIR/INFOREM-STORE-DRIVER.cpbk
+
+WORK__IDRP_INFOREM_STORE_DRIVER_COPYBOOK_INCOMING_LOCATION=$MAINFRAME_COPYBOOKS_HDFS_DIR/INFOREM-STORE-DRIVER.cpbk
+
+WORK__IDRP_INFOREM_STORE_DRIVER_STAGING_LOCATION=$STAGING_DIR/mainframe/kmart/inforem/store_driver
+
+WORK__IDRP_INFOREM_STORE_DRIVER_INCOMING_LOCATION=$PROJECT_INCOMING_DIR/inforem_store_driver
+
+WORK__IDRP_INFOREM_STORE_DRIVER_CONVERTED_WORK_LOCATION=$PROJECT_WORK_DIR/converted/inforem_store_driver
+
+WORK__IDRP_INFOREM_STORE_DRIVER_FORMATTED_WORK_LOCATION=$PROJECT_WORK_DIR/formatted/inforem_store_driver
+
+WORK__IDRP_INFOREM_STORE_DRIVER_LOCATION=$PROJECT_WORK_DIR/inforem_store_driver
+
+WORK__IDRP_INFOREM_STORE_DRIVER_SCHEMA='
+                                        driver_item_id:chararray,
+                                        driver_store_nbr:chararray,
+                                        driver_dvsn_nbr:chararray,
+                                        driver_catg_nbr:chararray,
+                                        driver_ksn_id:chararray,
+                                        driver_vend_pack_id:chararray,
+                                        driver_reord_mthd_cd:chararray,
+                                        driver_dtc_num:chararray,
+                                        driver_dtce_num:chararray,
+                                        driver_pog_face:chararray,
+                                        driver_pog_pres:chararray,
+                                        driver_pog_cap:chararray,
+                                        driver_checkout_ind:chararray,
+                                        driver_serv_dc:chararray,
+                                        filler:chararray
+                                       '
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

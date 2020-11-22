@@ -1,0 +1,121 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         work__idrp_eligible_item_1.schema
+# AUTHOR NAME:         Onkar Malewadikar
+# CREATION DATE:       Mon Oct 14 05:09:17 EDT 2013
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+#TODO instead of /work/idrp/item_eligibility/item/current
+WORK__IDRP_ELIGIBLE_ITEM_1_LOCATION=$PROJECT_WORK_DIR/eligible_item_1
+
+WORK__IDRP_ELIGIBLE_ITEM_1_SCHEMA='
+                                   item:chararray,
+                                   descr:chararray,
+                                   shc_dvsn_no:chararray,
+                                   shc_dvsn_nm:chararray,
+                                   shc_dept_no:chararray,
+                                   shc_dept_nm:chararray,
+                                   shc_cat_grp_no:chararray,
+                                   shc_cat_grp_nm:chararray,
+                                   shc_cat_no:chararray,
+                                   shc_cat_nm:chararray,
+                                   shc_subcat_no:chararray,
+                                   shc_subcat_nm:chararray,
+                                   ref_ksn_id:chararray,
+                                   srs_bus_no:chararray,
+                                   srs_bus_nm:chararray,
+                                   srs_div_no:chararray,
+                                   srs_div_nm:chararray,
+                                   srs_ln_no:chararray,
+                                   srs_ln_ds:chararray,
+                                   srs_sbl_no:chararray,
+                                   srs_sbl_ds:chararray,
+                                   srs_cls_no:chararray,
+                                   srs_cls_ds:chararray,
+                                   srs_itm_no:chararray,
+                                   srs_sku_no:chararray,
+                                   srs_div_itm:chararray,
+                                   srs_div_itm_sku:chararray,
+                                   ima_smt_itm_no:chararray,
+                                   ima_smt_itm_ds:chararray,
+                                   ima_smt_fac_qt:chararray,
+                                   uom:chararray,
+                                   vol:chararray,
+                                   wgt:chararray,
+                                   vnd_no:chararray,
+                                   vnd_nm:chararray,
+                                   vnd_itm_no:chararray,
+                                   spc_ord_cdt_fl:chararray,
+                                   itm_emp_fl:chararray,
+                                   easy_ord_fl:chararray,
+                                   itm_rpd_fl:chararray,
+                                   itm_cd_fl:chararray,
+                                   itm_imp_fl:chararray,
+                                   itm_cs_fl:chararray,
+                                   dd_ind:chararray,
+                                   instl_ind:chararray,
+                                   cheetah_elgbl_fl:chararray,
+                                   dot_com_cd:chararray,
+                                   obn_830_fl:chararray,
+                                   obn_830_dur:chararray,
+                                   rpd_frz_dur:chararray,
+                                   dist_typ_cd:chararray,
+                                   sls_pfm_seg_cd:chararray,
+                                   fmt_excl_cd:chararray,
+                                   str_fcst_cd:chararray,
+                                   inv_mgmt_srvc_cd:chararray,
+                                   ima_itm_typ_cd:chararray,
+                                   itm_purch_sts_cd:chararray,
+                                   ntwk_dist_cd:chararray,
+                                   fut_ntwk_dist_cd:chararray,
+                                   fut_ntwk_eff_dt:chararray,
+                                   jit_ntwk_dist_cd:chararray,
+                                   cust_dir_ntwk_cd:chararray,
+                                   str_reord_auth_cd:chararray,
+                                   cross_mdse_attr_cd:chararray,
+                                   whse_sizing:chararray,
+                                   can_carr_mdl_id:chararray,
+                                   groc_crossover_ind:chararray,
+                                   owner_cd:chararray,
+                                   pln_id:chararray,
+                                   itm_pgm:chararray,
+                                   key_pgm:chararray,
+                                   natl_un_cst_am:chararray,
+                                   prd_sll_am:chararray,
+                                   size:chararray,
+                                   style:chararray,
+                                   md_style_ref_cd:chararray,
+                                   seas_cd:chararray,
+                                   seas_yr:chararray,
+                                   sub_seas_id:chararray,
+                                   rpt_id:chararray,
+                                   rpt_id_seq_no:chararray,
+                                   itm_fcst_grp_id:chararray,
+                                   itm_fcst_grp_ds:chararray,
+                                   idrp_itm_typ_ds:chararray,
+                                   brand_ds:chararray,
+                                   color_ds:chararray,
+                                   tire_size_ds:chararray,
+                                   elig_sts_cd:chararray,
+                                   lst_sts_chg_dt:chararray,
+                                   itm_del_fl:chararray,
+                                   prd_prg_dt:chararray
+                                  '
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

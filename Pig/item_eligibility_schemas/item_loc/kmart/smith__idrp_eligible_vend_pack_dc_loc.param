@@ -1,0 +1,27 @@
+SMITH__IDRP_ELIGIBLE_VEND_PACK_DC_LOC_SCHEMA='vend_pack_id:chararray,\
+					locn_nbr:chararray,\
+	 				eff_ts:chararray,\
+					expir_ts:chararray,\
+					ship_aprk_id:chararray,\
+					purch_stat_cd:chararray,\
+					inbnd_unit_cost:chararray,\
+					ksn_id:chararray,\
+					first_rcpt_dt:chararray,\
+					purch_stat_dt:chararray,\
+					unit_per_trlr_qty:chararray,\
+					trlr_units_uom_cd:chararray,\
+					pall_exmpt_ind:chararray,\
+					pall_per_trlr_qty:chararray,\
+					crtn_per_layer_qty:chararray,\
+					layer_per_pall_qty:chararray,\
+					pall_wt:chararray,\
+					ship_cube:chararray,\
+					stack_pallet_cd:chararray,\
+					pall_surf_bal_ind:chararray,\
+					inbnd_ord_uom_cd:chararray,\
+					trlr_cpcty_id:chararray,\
+					nested_prod_ind:chararray,\
+					std_pall_ind:chararray,\
+					dc_grs_cost_amt:chararray,\
+					vp_dc_alt_id:chararray,\
+					last_chg_user_id:chararray'

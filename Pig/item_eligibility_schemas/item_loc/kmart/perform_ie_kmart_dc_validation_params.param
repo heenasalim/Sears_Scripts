@@ -1,0 +1,114 @@
+JARPATH = /appl/hdidrp/lib/IdrpIntegrationPigUdf.jar
+
+num_parallel = 99
+
+validation_string = '\'item:isnull:\',item,\'loc:isnull:\',loc,\'purch_stat_cd:isnull:\',purch_stat_cd,\'srs_division_nbr:number:\',srs_division_nbr,\'srs_item_nbr:number:\',srs_item_nbr,\'ksn_id:number:\',ksn_id,\'srs_sku_cd:number:\',srs_sku_cd'
+
+processed_hdfs_path = ./dc_output
+
+final_output_schema = 'item : chararray,\
+							loc : chararray,\
+							src_owner_cd : chararray,\
+							elig_sts_cd : chararray,\
+							src_pack_qty : chararray,\
+							src_loc : chararray,\
+							po_vnd_no : chararray,\
+							ksn_id : chararray,\
+							purch_stat_cd : chararray,\
+							retail_crtn_intrnl_pack_qty : chararray,\
+							days_to_check_begin_date : chararray,\
+							days_to_check_end_date : chararray,\
+							dotcom_order_indicator : chararray,\
+							vend_pack_id : chararray,\
+							vend_pack_purch_stat_cd : chararray,\
+							vendor_pack_flow_type : chararray,\
+							vendor_pack_qty : chararray,\
+							reorder_method_code : chararray,\
+							str_supplier_cd : chararray,\
+							vend_stk_nbr : chararray,\
+							ksn_pack_id : chararray,\
+							ksn_dc_pack_purch_stat_cd : chararray,\
+							inbnd_ord_uom_cd : chararray,\
+							enable_jif_dc_ind : chararray,\
+							stk_ind : chararray,\
+							crtn_per_layer_qty : chararray,\
+							layer_per_pall_qty : chararray,\
+							dc_config_cd : chararray,\
+							imp_fl : chararray,\
+							srs_division_nbr : chararray,\
+							srs_item_nbr : chararray,\
+							srs_sku_cd : chararray,\
+							srs_location_nbr : chararray,\
+							srs_source_nbr : chararray,\
+							rim_sts_cd : chararray,\
+							non_stock_source_cd : chararray,\
+							item_active_ind : chararray,\
+							item_reserve_cd : chararray,\
+							item_next_period_on_hand_qty : chararray,\
+							item_reserve_qty : chararray,\
+							item_back_order_qty : chararray,\
+							item_next_period_future_order_qty : chararray,\
+							item_on_order_qty : chararray,\
+							item_next_period_in_transit_qty : chararray,\
+							item_last_receive_dt : chararray,\
+							item_last_ship_dt : chararray,\
+							stk_typ_cd : chararray'
+
+final_output_fields = 'item,\
+							loc,\
+							src_owner_cd,\
+							elig_sts_cd,\
+							src_pack_qty,\
+							src_loc,\
+							po_vnd_no,\
+							ksn_id,\
+							purch_stat_cd,\
+							retail_crtn_intrnl_pack_qty,\
+							days_to_check_begin_date,\
+							days_to_check_end_date,\
+							dotcom_order_indicator,\
+							vend_pack_id,\
+							vend_pack_purch_stat_cd,\
+							vendor_pack_flow_type,\
+							vendor_pack_qty,\
+							reorder_method_code,\
+							str_supplier_cd,\
+							vend_stk_nbr,\
+							ksn_pack_id,\
+							ksn_dc_pack_purch_stat_cd,\
+							inbnd_ord_uom_cd,\
+							enable_jif_dc_ind,\
+							stk_ind,\
+							crtn_per_layer_qty,\
+							layer_per_pall_qty,\
+							dc_config_cd,\
+							imp_fl,\
+							srs_division_nbr,\
+							srs_item_nbr,\
+							srs_sku_cd,\
+							srs_location_nbr,\
+							srs_source_nbr,\
+							rim_sts_cd,\
+							non_stock_source_cd,\
+							item_active_ind,\
+							item_reserve_cd,\
+							item_next_period_on_hand_qty,\
+							item_reserve_qty,\
+							item_back_order_qty,\
+							item_next_period_future_order_qty,\
+							item_on_order_qty,\
+							item_next_period_in_transit_qty,\
+							item_last_receive_dt,\
+							item_last_ship_dt,\
+							stk_typ_cd'
+
+
+business_hdfs_path = ./valid_output
+
+error_hdfs_path = /work/idrp/item_eligible/dc/item_error
+
+audit_hdfs_path = /work/idrp/item_eligible/dc/item_audit
+
+field_delimiter_a = '\'\\u0001\''
+
+field_delimiter_pipe = '\'|\''

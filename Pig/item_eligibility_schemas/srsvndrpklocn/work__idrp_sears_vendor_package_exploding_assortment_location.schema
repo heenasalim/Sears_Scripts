@@ -1,0 +1,109 @@
+#!/bin/bash
+###############################################################################
+#<>                                HEADER                                   <>#
+###############################################################################
+# SCRIPT NAME:         work__idrp_sears_vendor_package_exploding_assortment_location.schema
+# AUTHOR NAME:         Arjun Dabhade
+# CREATION DATE:       24-07-2014 11:01
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+# SOURCE SCHEMA TYPE: HIVE
+# SOURCE SCHEMA NAME: work__idrp_sears_vendor_package_exploding_assortment_location
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#        1/19/2017	Srujan Dussa	IPS-779 . Adding rim_last_record_create_dt from gold__inventory_rim_daily_current to be included in the Extract File to Shared Items.
+#
+#
+###############################################################################
+#<>                                 BODY                                    <>#
+###############################################################################
+
+WORK__IDRP_SEARS_VENDOR_PACKAGE_EXPLODING_ASSORTMENT_LOCATION_LOCATION=$PROJECT_WORK_DIR/sears_vendor_package_exploding_assortment_location
+
+WORK__IDRP_SEARS_VENDOR_PACKAGE_EXPLODING_ASSORTMENT_LOCATION_SCHEMA='
+                                                                      vendor_package_id:chararray,
+                                                                      location_id:chararray,
+                                                                      location_format_type_cd:chararray,
+                                                                      location_level_cd:chararray,
+                                                                      location_owner_cd:chararray,
+                                                                      source_owner_cd:chararray,
+                                                                      active_ind:chararray,
+                                                                      active_ind_change_dt:chararray,
+                                                                      allocation_replenishment_cd:chararray,
+                                                                      purchase_order_vendor_location_id:chararray,
+                                                                      replenishment_planning_ind:chararray,
+                                                                      scan_based_trading_ind:chararray,
+                                                                      source_location_id:chararray,
+                                                                      source_location_level_cd:chararray,
+                                                                      source_package_qty :chararray,
+                                                                      vendor_package_purchase_status_cd:chararray,
+                                                                      vendor_package_purchase_status_dt:chararray,
+                                                                      flow_type_cd:chararray,
+                                                                      import_ind:chararray,
+                                                                      retail_carton_vendor_package_id:chararray,
+                                                                      vendor_package_owner_cd:chararray,
+                                                                      vendor_stock_nbr:chararray,
+                                                                      shc_item_id:chararray,
+                                                                      item_purchase_status_cd:chararray,
+                                                                      can_carry_model_id:chararray,
+                                                                      days_to_check_begin_day_dt:chararray,
+                                                                      days_to_check_end_day_dt:chararray,
+                                                                      reorder_method_cd:chararray,
+                                                                      ksn_id:chararray,
+                                                                      ksn_purchase_status_cd:chararray,
+                                                                      cross_merchandising_cd:chararray,
+                                                                      dotcom_orderable_cd:chararray,
+                                                                      kmart_markdown_ind:chararray,
+                                                                      ksn_package_id:chararray,
+                                                                      ksn_dc_package_purchase_status_cd:chararray,
+                                                                      dc_configuration_cd:chararray,
+                                                                      substitution_eligible_ind:chararray,
+                                                                      sears_division_nbr:chararray,
+                                                                      sears_item_nbr:chararray,
+                                                                      sears_sku_nbr:chararray,
+                                                                      sears_location_id:chararray,
+                                                                      sears_source_location_id:chararray,
+                                                                      rim_status_cd:chararray,
+                                                                      stock_type_cd:chararray,
+                                                                      non_stock_source_cd:chararray,
+                                                                      dos_item_active_ind:chararray,
+                                                                      item_reserve_cd:chararray,
+                                                                      create_dt:chararray,
+                                                                      last_update_dt:chararray,
+                                                                      vendor_package_carton_qty:chararray,
+                                                                      special_retail_order_system_ind:chararray,
+                                                                      shc_item_corporate_owner_cd:chararray,
+                                                                      distribution_type_cd:chararray,
+                                                                      only_rsu_distribution_channel_ind:chararray,
+                                                                      special_order_candidate_ind:chararray,
+                                                                      item_emp_ind:chararray,
+                                                                      easy_order_ind:chararray,
+                                                                      warehouse_sizing_attribute_cd:chararray,
+                                                                      rapid_item_ind:chararray,
+                                                                      constrained_item_ind:chararray,
+                                                                      idrp_item_type_desc:chararray,
+                                                                      cross_merchandising_attribute_cd:chararray,
+                                                                      sams_migration_ind:chararray,
+                                                                      emp_to_jit_ind:chararray,
+                                                                      rim_flow_ind:chararray,
+                                                                      source_system_cd :chararray,
+                                                                      original_source_nbr:chararray,
+                                                                      item_next_period_on_hand_qty:chararray,
+                                                                      item_on_order_qty:chararray,
+                                                                      item_reserve_qty:chararray,
+                                                                      item_back_order_qty:chararray,
+                                                                      item_next_period_future_order_qty:chararray,
+                                                                      item_next_period_in_transit_qty:chararray,
+                                                                      item_last_receive_dt:chararray,
+                                                                      item_last_ship_dt:chararray,
+								      								  rim_last_record_creation_dt:chararray,
+                                                                      idrp_batch_id:chararray
+                                                                     '
+
+###############################################################################
+#<>                                  END                                    <>#
+###############################################################################

@@ -1,0 +1,45 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         work__idrp_item_rpt_grp.schema
+# AUTHOR NAME:         Abhijeet Shingate
+# CREATION DATE:       Mon Oct 14 05:08:44 EDT 2013
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+# SOURCE SCHEMA TYPE: ORACLE
+# SOURCE SCHEMA NAME: DB2.ITEM_RPT_GRP
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#	02/dec/2015		pankaj		Changed the source incoming path as the data is already been sqooped by oiitem 
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+#WORK__IDRP_ITEM_RPT_GRP_INCOMING_LOCATION=$PROJECT_INCOMING_DIR/item_rpt_grp
+
+WORK__IDRP_ITEM_RPT_GRP_INCOMING_LOCATION=$INCOMING_DIR/oiitem/input/ITEM_RPT_GRP
+
+WORK__IDRP_ITEM_RPT_GRP_WORK_LOCATION=$PROJECT_WORK_DIR/formatted/item_rpt_grp
+
+WORK__IDRP_ITEM_RPT_GRP_LOCATION=$PROJECT_WORK_DIR/item_rpt_grp
+
+WORK__IDRP_ITEM_RPT_GRP_SCHEMA='
+                                item_id:chararray,
+                                rpt_grp_id:chararray,
+                                rpt_grp_seq_nbr:chararray,
+                                creat_ts:chararray,
+                                last_chg_user_id:chararray,
+                                last_chg_ts:chararray,
+                                itm_rpt_grp_alt_id:chararray,
+                                delt_dt:chararray
+                               '
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

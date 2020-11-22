@@ -1,0 +1,10 @@
+
+gold__item_sears_channel_distribution_current_schema='load_ts:chararray,\
+                                                        sears_division_nbr:chararray,\
+                                                        sears_item_nbr:chararray,\
+                                                        organizational_group_type_cd:chararray,\
+                                                        organizational_group_type_desc:chararray,\
+                                                        effective_ts:chararray,\
+                                                        expiration_ts:chararray,\
+                                                        last_change_user_id:chararray,\
+                                                        sears_channel_distribution_alternate_id:chararray'

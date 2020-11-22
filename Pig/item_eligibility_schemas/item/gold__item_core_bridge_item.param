@@ -1,0 +1,24 @@
+gold__item_core_bridge_item_schema='load_ts:chararray,\
+                                      sears_division_nbr:chararray,\
+                                      sears_item_nbr:chararray,\
+                                      effective_ts:chararray,\
+                                      expiration_ts:chararray,\
+                                      item_order_system_cd:chararray,\
+                                      item_order_system_desc:chararray,\
+                                      similiar_to_tx:chararray,\
+                                      sears_item_style_reference_nbr:chararray,\
+                                      sears_item_size_cd:chararray,\
+                                      sears_item_primary_desc:chararray,\
+                                      sears_item_secondary_desc:chararray,\
+                                      risk_age_factor_cd:chararray,\
+                                      risk_age_factor_desc:chararray,\
+                                      item_manufacture_nbr_printed_ind:chararray,\
+                                      rim_review_method_cd:chararray,\
+                                      rim_review_method_desc:chararray,\
+                                      retail_coverage_week_nbr:chararray,\
+                                      last_change_user_id:chararray,\
+                                      prepack_ind:chararray,\
+                                      sears_crc_vendor_nbr:chararray,\
+                                      cost_pointing_method_cd:chararray,\
+                                      cost_pointing_method_desc:chararray,\
+                                      core_bridge_item_alternate_id:chararray'

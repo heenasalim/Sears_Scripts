@@ -1,0 +1,72 @@
+#!/bin/bash
+###############################################################################
+#<>                                HEADER                                   <>#
+###############################################################################
+# SCRIPT NAME:         work__idrp_candidate_sears_store.schema
+# AUTHOR NAME:         Neera Singh
+# CREATION DATE:       08-07-2014 02:16
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+# SOURCE SCHEMA TYPE: WORK
+# SOURCE SCHEMA NAME: work__idrp_candidate_sears_store
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#	 01/19/2017		Srujan Dussa	IPS-779 . Adding rim_last_record_create_dt from gold__inventory_rim_daily_current to be included in the Extract File to Shared Items.
+#
+#
+###############################################################################
+#<>                                 BODY                                    <>#
+###############################################################################
+
+WORK__IDRP_CANDIDATE_SEARS_STORE_LOCATION=$PROJECT_WORK_DIR/candidate_sears_store
+
+WORK__IDRP_CANDIDATE_SEARS_STORE_MISSING_SOURCE_ERROR_LOCATION=$PROJECT_WORK_DIR/candidate_sears_store_missing_source_error
+
+WORK__IDRP_CANDIDATE_SEARS_STORE_SCHEMA='
+                                  sears_division_nbr:chararray,
+				  sears_item_nbr:chararray,
+				  sears_sku_nbr:chararray,
+				  sears_location_id:chararray,
+				  location_id:chararray,
+				  location_level_cd:chararray,
+				  location_format_type_cd:chararray,
+				  location_owner_cd:chararray,
+			 	  rim_original_source_nbr:chararray,
+				  rim_source_nbr:chararray,
+				  source_location_id:chararray,
+				  source_location_level_cd:chararray,
+				  purchase_order_vendor_location_id:chararray,
+				  rim_status_cd:chararray,
+				  active_ind:chararray,
+                                  source_package_qty:chararray,
+				  shc_item_id:chararray,
+				  ksn_id:chararray,
+				  special_retail_order_system_ind:chararray,
+				  shc_item_corporate_owner_cd:chararray,
+				  dot_com_allocation_ind:chararray,
+				  distribution_type_cd:chararray,
+				  only_rsu_distribution_channel_ind:chararray,
+				  special_order_candidate_ind:chararray,
+				  item_emp_ind:chararray,
+				  easy_order_ind:chararray,
+				  warehouse_sizing_attribute_cd:chararray,
+				  rapid_item_ind:chararray,
+				  constrained_item_ind:chararray,
+				  sears_import_ind:chararray,
+				  idrp_item_type_desc:chararray,
+				  cross_merchandising_attribute_cd:chararray,
+				  sams_migration_ind:chararray,
+				  emp_to_jit_ind:chararray,
+				  rim_flow_ind:chararray,
+				  cross_merchandising_cd:chararray,
+				  cross_merchandising_store_type_cd:chararray,
+				  rim_last_record_creation_dt:chararray
+                                 '
+
+###############################################################################
+#<>                                  END                                    <>#
+###############################################################################
+

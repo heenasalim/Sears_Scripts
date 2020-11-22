@@ -1,0 +1,9 @@
+item_rpt_grp_schema='item_id : chararray,\
+                        rpt_grp_id : chararray,\
+                        rpt_grp_seq_nbr : chararray,\
+                        creat_ts : chararray,\
+                        last_chg_user_id : chararray,\
+                        last_chg_ts : chararray,\
+                        itm_rpt_grp_alt_id : chararray,\
+                        delt_dt : chararray,\
+                        last_updated_ts : chararray'

@@ -1,0 +1,125 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         work__idrp_inforem_store_master.schema
+# AUTHOR NAME:         Abhijeet Shingate
+# CREATION DATE:       Mon Oct 14 05:09:27 EDT 2013
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+# SOURCE SCHEMA TYPE: COPYBOOK
+# SOURCE SCHEMA NAME: INFOREM-STORE-MASTER.cpbk
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+WORK__IDRP_INFOREM_STORE_MASTER_COPYBOOK_LOCAL_LOCATION=$MAINFRAME_COPYBOOKS_LOCAL_DIR/INFOREM-STORE-MASTER.cpbk
+
+WORK__IDRP_INFOREM_STORE_MASTER_COPYBOOK_INCOMING_LOCATION=$MAINFRAME_COPYBOOKS_HDFS_DIR/INFOREM-STORE-MASTER.cpbk
+
+WORK__IDRP_INFOREM_STORE_MASTER_STAGING_LOCATION=$STAGING_DIR/mainframe/kmart/inforem/store_master
+
+WORK__IDRP_INFOREM_STORE_MASTER_INCOMING_LOCATION=$PROJECT_INCOMING_DIR/inforem_store_master
+
+WORK__IDRP_INFOREM_STORE_MASTER_CONVERTED_WORK_LOCATION=$PROJECT_WORK_DIR/converted/inforem_store_master
+
+WORK__IDRP_INFOREM_STORE_MASTER_FORMATTED_WORK_LOCATION=$PROJECT_WORK_DIR/formatted/inforem_store_master
+
+WORK__IDRP_INFOREM_STORE_MASTER_LOCATION=$PROJECT_WORK_DIR/inforem_store_master
+
+WORK__IDRP_INFOREM_STORE_MASTER_SCHEMA='
+                                        m_repl_item_id:chararray,
+                                        m_repl_store:chararray,
+                                        m_dvsn_nbr:chararray,
+                                        m_catg_nbr:chararray,
+                                        m_subcatg_nbr:chararray,
+                                        m_merch_area:chararray,
+                                        m_serv_dc:chararray,
+                                        m_ord_duns_nbr:chararray,
+                                        m_orderable_vend_pack_id:chararray,
+                                        m_orderable_ksn_id:chararray,
+                                        m_orderable_ksn_pack_id:chararray,
+                                        m_dser:chararray,
+                                        m_lt:chararray,
+                                        m_madlt:chararray,
+                                        m_ostrat:chararray,
+                                        m_cost:chararray,
+                                        m_packsz:chararray,
+                                        m_imax:chararray,
+                                        m_imin:chararray,
+                                        m_usermax:chararray,
+                                        m_usermin:chararray,
+                                        m_ddrunsw:chararray,
+                                        m_ucycle:chararray,
+                                        m_bpn:chararray,
+                                        m_dduwks:chararray,
+                                        m_ddumos:chararray,
+                                        m_aux_sysid:chararray,
+                                        m_ft:chararray,
+                                        m_dd:chararray,
+                                        m_ddi:chararray,
+                                        m_lpp:chararray,
+                                        m_madss:chararray,
+                                        m_fwmad:chararray,
+                                        m_trndp:chararray,
+                                        m_cumsls:chararray,
+                                        m_cumpds:chararray,
+                                        m_outstat:chararray,
+                                        m_lrtfcst:chararray,
+                                        m_ordstat:chararray,
+                                        m_pt:chararray,
+                                        m_ptag:chararray,
+                                        m_rt:chararray,
+                                        m_system_split_nbr:chararray,
+                                        m_new_itmstr_ind:chararray,
+                                        m_store_auth_ind:chararray,
+                                        m_last_auth_date:long,
+                                        m_orderable_ind:chararray,
+                                        m_orderable_cd:chararray,
+                                        m_reord_mthd_cd:chararray,
+                                        m_review_freq_cd:chararray,
+                                        m_process_record_ind:chararray,
+                                        m_store_supplier_cd:chararray,
+                                        m_flowtype_cd:chararray,
+                                        m_dc_hndl_cd:chararray,
+                                        m_item_age_sw:chararray,
+                                        m_store_age_sw:chararray,
+                                        m_first_auto_repl_date:long,
+                                        m_ptag_update_date:long,
+                                        m_ptag_update_sess_id:chararray,
+                                        m_calc_cstock:chararray,
+                                        m_pog_face:chararray,
+                                        m_pog_pres:chararray,
+                                        m_pog_cap:chararray,
+                                        m_pog_checkout_ind:chararray,
+                                        m_dtc_date:long,
+                                        m_dtce_date:long,
+                                        m_pkg_weight:chararray,
+                                        m_pkg_weight_cd:chararray,
+                                        m_unit_sell_price:chararray,
+                                        m_locn_division_cd:chararray,
+                                        m_locn_format_type:chararray,
+                                        m_locn_format_sub_type:chararray,
+                                        m_locn_open_date:long,
+                                        m_rate_of_sale_ind:chararray,
+                                        m_network_distrb_cd:chararray,
+                                        m_season_code:chararray,
+                                        m_top_item_store_cd:chararray,
+                                        m_corporate_dser:chararray,
+                                        m_deciles_rank_nbr:chararray,
+                                        m_rate_of_sale_cd:chararray,
+                                        m_import_cd:chararray,
+                                        filler:chararray
+                                       '
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

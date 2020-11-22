@@ -1,0 +1,15 @@
+INFOREM_STORE_DRIVER_FILE_SCHEMA='DRIVER_ITEM_ID:chararray,\
+				  DRIVER_STORE_NBR:chararray,\
+                                  DRIVER_DVSN_NBR:chararray,\
+                                  DRIVER_CATG_NBR:chararray,\
+                                  DRIVER_KSN_ID:chararray,\
+                                  DRIVER_VEND_PACK_ID:chararray,\
+                                  DRIVER_REORD_MTHD_CD:chararray,\
+                                  DRIVER_DTC_NUM:chararray,\
+                                  DRIVER_DTCE_NUM:chararray,\
+                                  DRIVER_POG_FACE:chararray,\
+                                  DRIVER_POG_PRES:chararray,\
+                                  DRIVER_POG_CAP:chararray,\
+                                  DRIVER_CHECKOUT_IND:chararray,\
+                                  DRIVER_SERV_DC:chararray,\
+                                  FILLER:chararray'

@@ -1,0 +1,33 @@
+#!/bin/bash
+###############################################################################
+#<>                                HEADER                                   <>#
+###############################################################################
+# SCRIPT NAME:         work__idrp_item_eligibility_sears_vendor_package_ta_shared_location.schema
+# AUTHOR NAME:         Neera Singh
+# CREATION DATE:       23-06-2014 02:16
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+# SOURCE SCHEMA TYPE: WORK
+# SOURCE SCHEMA NAME: work__idrp_item_eligibility_sears_vendor_package_ta_shared_location
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                 BODY                                    <>#
+###############################################################################
+
+WORK__IDRP_ITEM_ELIGIBILITY_SEARS_VENDOR_PACKAGE_TA_SHARED_LOCATION_LOCATION=$PROJECT_WORK_DIR/sears_vendor_package_ta_shared_location
+
+WORK__IDRP_ITEM_ELIGIBILITY_SEARS_VENDOR_PACKAGE_TA_SHARED_LOCATION_SCHEMA='
+                                  ta_shared_location:chararray
+                                 '
+
+###############################################################################
+#<>                                  END                                    <>#
+###############################################################################
+

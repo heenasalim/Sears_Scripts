@@ -1,0 +1,51 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         work__idrp_item_rpt_cost.schema
+# AUTHOR NAME:         Abhijeet Shingate
+# CREATION DATE:       Mon Oct 14 05:08:51 EDT 2013
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+# SOURCE SCHEMA TYPE: ORACLE
+# SOURCE SCHEMA NAME: DB2.ITEM_RPT_COST
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#	02/dec/2015		pankaj		Changed the source incoming path as the data is already been sqooped by oiitem  
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+#WORK__IDRP_ITEM_RPT_COST_INCOMING_LOCATION=$PROJECT_INCOMING_DIR/item_rpt_cost
+
+WORK__IDRP_ITEM_RPT_COST_INCOMING_LOCATION=$INCOMING_DIR/oiitem/input/ITEM_RPT_COST
+
+WORK__IDRP_ITEM_RPT_COST_WORK_LOCATION=$PROJECT_WORK_DIR/formatted/item_rpt_cost
+
+WORK__IDRP_ITEM_RPT_COST_LOCATION=$PROJECT_WORK_DIR/item_rpt_cost
+
+WORK__IDRP_ITEM_RPT_COST_SCHEMA='
+                                 item_id:chararray,
+                                 fisc_wk_end_dt:chararray,
+                                 corp_90dy_avg_cost:chararray,
+                                 pr_90dy_avg_cost:chararray,
+                                 vi_90dy_avg_cost:chararray,
+                                 gu_90dy_avg_cost:chararray,
+                                 hi_90dy_avg_cost:chararray,
+                                 stsd_90dy_avg_cost:chararray,
+                                 corp_ptd_avg_cost:chararray,
+                                 pr_ptd_avg_cost:chararray,
+                                 vi_ptd_avg_cost:chararray,
+                                 gu_ptd_avg_cost:chararray,
+                                 hi_ptd_avg_cost:chararray,
+                                 stsd_ptd_avg_cost:chararray
+                                '
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

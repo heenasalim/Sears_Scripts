@@ -1,0 +1,20 @@
+smith__idrp_eligible_item_loc_srim_join  = 'item:chararray,\
+loc:chararray,\
+srs_loc:chararray,\
+srs_vndr_nbr:chararray,\
+loc_lvl_cd:chararray,\
+status_cd:chararray,\
+easy_ord_fl:chararray,\
+spc_ord_cdt_fl:chararray,\
+itm_emp_fl:chararray,\
+loc_fmt_typ_cd:chararray,\
+src_pack_qty:chararray,\
+ksn_id:chararray,\
+import_cd:chararray,\
+srs_division_nbr:chararray,\
+srs_item_nbr:chararray,\
+srs_sku_cd:chararray,\
+srs_location_nbr:chararray,\
+srs_source_nbr:chararray,\
+rim_sts_cd:chararray,\
+fmt_typ_cd:chararray'

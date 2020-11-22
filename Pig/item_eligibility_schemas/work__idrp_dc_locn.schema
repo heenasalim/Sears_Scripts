@@ -1,0 +1,58 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         work__idrp_dc_locn.schema
+# AUTHOR NAME:         Abhijeet Shingate
+# CREATION DATE:       Mon Oct 14 05:08:23 EDT 2013
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+# SOURCE SCHEMA TYPE: ORACLE
+# SOURCE SCHEMA NAME: DB2.DC_LOCN
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+WORK__IDRP_DC_LOCN_INCOMING_LOCATION=$PROJECT_INCOMING_DIR/dc_locn
+
+WORK__IDRP_DC_LOCN_WORK_LOCATION=$PROJECT_WORK_DIR/formatted/dc_locn
+
+WORK__IDRP_DC_LOCN_LOCATION=$PROJECT_WORK_DIR/dc_locn
+
+WORK__IDRP_DC_LOCN_SCHEMA='
+                           dc_locn_nbr:chararray,
+                           last_po_nbr:chararray,
+                           last_import_po_nbr:chararray,
+                           last_wrksht_nbr:chararray,
+                           flow_thru_ind:chararray,
+                           enable_jif_dc_ind:chararray,
+                           dc_cd:chararray,
+                           dc_type_cd:chararray,
+                           ord_locn_ind:chararray,
+                           logistics_group:chararray,
+                           dc_nm:chararray,
+                           dc_850_nm:chararray,
+                           hme_ctr_ind:chararray,
+                           jit_ind:chararray,
+                           stk_ind:chararray,
+                           import_ind:chararray,
+                           rim_ind:chararray,
+                           sen_itm_maint_ind:chararray,
+                           mdl_dc_locn_nbr:chararray,
+                           lst_chg_dt:chararray,
+                           lst_chg_usr_id:chararray,
+                           send_ord_maint_ind:chararray,
+                           ptc_ind:chararray
+                          '
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

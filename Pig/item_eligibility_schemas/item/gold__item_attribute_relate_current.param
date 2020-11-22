@@ -1,0 +1,23 @@
+											
+gold__item_attribute_relate_current_schema='load_ts:chararray,\
+                                              attribute_relate_id:chararray,\
+                                              effective_ts:chararray,\
+                                              expiration_ts:chararray,\
+                                              attribute_relate_level_cd:chararray,\
+                                              item_id:chararray,\
+                                              ksn_id:chararray,\
+                                              package_id:chararray,\
+                                              attribute_id:chararray,\
+                                              attribute_nm:chararray,\
+                                              attribute_definition_tx:chararray,\
+                                              value_id:chararray,\
+                                              value_nm:chararray,\
+                                              value_definition_tx:chararray,\
+                                              product_group_attribute_cd:chararray,\
+                                              value_cd:chararray,\
+                                              value_short_nm:chararray,\
+                                              sub_attribute_id:chararray,\
+                                              sub_attribute_nm:chararray,\
+                                              sub_attribute_definition_tx:chararray,\
+                                              attribute_relate_alternate_id:chararray,\
+                                              last_change_user_id:chararray'

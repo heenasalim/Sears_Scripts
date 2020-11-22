@@ -1,0 +1,16 @@
+
+gold__item_price_link_default_price_schema='load_ts:chararray,\
+                                              price_link_id:chararray,\
+                                              effective_ts:chararray,\
+                                              expiration_ts:chararray,\
+                                              price_amt:chararray,\
+                                              price_multiple_qty:chararray,\
+                                              price_source_id:chararray,\
+                                              price_source_desc:chararray,\
+                                              last_change_user_id:chararray,\
+                                              winning_price_status_cd:chararray,\
+                                              price_type_cd:chararray,\
+                                              price_type_desc:chararray,\
+                                              price_level_cd:chararray,\
+                                              price_level_desc:chararray,\
+                                              price_priority_nbr:chararray'

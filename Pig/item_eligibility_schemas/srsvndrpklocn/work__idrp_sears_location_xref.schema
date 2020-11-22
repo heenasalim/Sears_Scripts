@@ -1,0 +1,38 @@
+#!/bin/bash
+###############################################################################
+#<>                                HEADER                                   <>#
+###############################################################################
+# SCRIPT NAME:         work__idrp_sears_location_xref.schema
+# AUTHOR NAME:         Neera Singh
+# CREATION DATE:       23-06-2014 02:16
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+# SOURCE SCHEMA TYPE: WORK
+# SOURCE SCHEMA NAME: work__idrp_sears_location_xref
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                 BODY                                    <>#
+###############################################################################
+
+WORK__IDRP_SEARS_LOCATION_XREF_LOCATION=$PROJECT_WORK_DIR/sears_location_xref
+
+WORK__IDRP_SEARS_LOCATION_XREF_SCHEMA='
+                                  location_id:chararray,
+				  sears_location_id:chararray,
+				  location_level_cd:chararray,
+				  location_owner_cd:chararray,
+				  location_format_type_cd:chararray,
+				  cross_merchandise_store_type_cd:chararray
+                                 '
+
+###############################################################################
+#<>                                  END                                    <>#
+###############################################################################
+

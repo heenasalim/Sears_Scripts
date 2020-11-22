@@ -1,0 +1,16 @@
+														 
+item_rpt_cost_schema='item_id:chararray,\
+						fisc_wk_end_dt:chararray,\
+						corp_90dy_avg_cost:chararray,\
+						pr_90dy_avg_cost:chararray,\
+						vi_90dy_avg_cost:chararray,\
+						gu_90dy_avg_cost:chararray,\
+						hi_90dy_avg_cost:chararray,\
+						stsd_90dy_avg_cost:chararray,\
+						corp_ptd_avg_cost:chararray,\
+						pr_ptd_avg_cost:chararray,\
+						vi_ptd_avg_cost:chararray,\
+						gu_ptd_avg_cost:chararray,\
+						hi_ptd_avg_cost:chararray,\
+						stsd_ptd_avg_cost:chararray,\
+						last_updated_ts:chararray'

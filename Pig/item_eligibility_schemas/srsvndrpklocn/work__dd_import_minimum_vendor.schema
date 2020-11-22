@@ -1,0 +1,44 @@
+#!/bin/bash
+###############################################################################
+#<>                                HEADER                                   <>#
+###############################################################################
+# SCRIPT NAME:         work__dd_import_minimum_vendor.schema
+# AUTHOR NAME:         Neera Singh
+# CREATION DATE:       08-07-2014 02:16
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+# SOURCE SCHEMA TYPE: WORK
+# SOURCE SCHEMA NAME: work__dd_import_minimum_vendor
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#		27/10/2014	Priyanka Gurjar	change the location path and the name for WORK__tw_IMPORT_MINIMUM_VENDOR_LOCATION to WORK__IMPORT_MINIMUM_VENDOR_LOCATION as per SPIRA 3208 
+#						(refer line no: 28)
+#
+###############################################################################
+#<>                                 BODY                                    <>#
+###############################################################################
+
+WORK__RRC_MINIMUM_VENDOR_LOCATION=$PROJECT_WORK_DIR/rrc_minimum_vendor
+
+WORK__DDC_MINIMUM_VENDOR_LOCATION=$PROJECT_WORK_DIR/ddc_minimum_vendor
+
+WORK__IMPORT_MINIMUM_VENDOR_LOCATION=$PROJECT_WORK_DIR/import_minimum_vendor
+
+WORK__DD_IMPORT_MINIMUM_VENDOR_LOCATION=$PROJECT_WORK_DIR/dd_import_minimum_vendor
+
+WORK__DD_IMPORT_MINIMUM_VENDOR_SCHEMA='
+                                  sears_division_nbr:chararray,
+				  sears_item_nbr:chararray,
+				  sears_sku_nbr:chararray,
+				  min_vendor_nbr:chararray,
+				  min_vendor_package_qty:chararray,
+				  min_vendor_location_id:chararray
+                                 '
+
+###############################################################################
+#<>                                  END                                    <>#
+###############################################################################
+

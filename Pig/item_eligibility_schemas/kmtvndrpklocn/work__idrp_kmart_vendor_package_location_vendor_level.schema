@@ -1,0 +1,90 @@
+###############################################################################
+#<>                                HEADER                                   <>#
+###############################################################################
+# SCRIPT NAME:         work__idrp_kmart_vendor_package_location_vendor_level.schema
+# AUTHOR NAME:         Arjun Dabhade
+# CREATION DATE:       Thu Jan 16 08:58:05 EST 2014
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+# SOURCE SCHEMA TYPE: Hive
+# SOURCE SCHEMA NAME: work__idrp_kmart_vendor_package_location_vendor_level
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#		03/19/2015		nthadan		included columns load_ts and idrp_batch_id to match Hive definition
+#		1/16/2017      SRUJAN DUSSA    IPS-779 - Added rim_last_record_creation_dt to the vendor pack location tables.  This is a sears only column that will be defaulted to '1970-01-01'
+#
+#
+###############################################################################
+#<>                                 BODY                                    <>#
+###############################################################################
+
+WORK__IDRP_KMART_VENDOR_PACKAGE_LOCATION_VENDOR_LEVEL_LOCATION=$PROJECT_WORK_DIR/kmart_vendor_package_location_vendor_level
+
+WORK__IDRP_KMART_VENDOR_PACKAGE_LOCATION_VENDOR_LEVEL_SCHEMA='
+											load_ts:chararray,
+                                              vendor_package_id:chararray,
+                                              location_id:chararray,
+                                              location_format_type_cd:chararray,
+                                              location_level_cd:chararray,
+                                              location_owner_cd:chararray,
+                                              source_owner_cd:chararray,
+                                              active_ind:chararray,
+                                              active_ind_change_dt:chararray,
+                                              allocation_replenishment_cd:chararray,
+                                              purchase_order_vendor_location_id:chararray,
+                                              replenishment_planning_ind:chararray,
+                                              scan_based_trading_ind:chararray,
+                                              source_location_id:chararray,
+                                              source_location_level_cd:chararray,
+                                              source_package_qty:chararray,
+                                              vendor_package_purchase_status_cd:chararray,
+                                              vendor_package_purchase_status_dt:chararray,
+                                              flow_type_cd:chararray,
+                                              import_ind:chararray,
+                                              retail_carton_vendor_package_id:chararray,
+                                              vendor_package_owner_cd:chararray,
+                                              vendor_stock_nbr:chararray,
+                                              shc_item_id:chararray,
+                                              item_purchase_status_cd:chararray,
+                                              can_carry_model_id:chararray,
+                                              days_to_check_begin_day_qty:chararray,
+                                              days_to_check_end_day_qty:chararray,
+                                              reorder_method_cd:chararray,
+                                              ksn_id:chararray,
+                                              ksn_purchase_status_cd:chararray,
+                                              cross_merchandising_cd:chararray,
+                                              dotcom_orderable_cd:chararray,
+                                              kmart_markdown_ind:chararray,
+                                              ksn_package_id:chararray,
+                                              ksn_dc_package_purchase_status_cd:chararray,
+                                              dc_configuration_cd:chararray,
+                                              substitution_eligible_ind:chararray,
+                                              sears_division_nbr:chararray,
+                                              sears_item_nbr:chararray,
+                                              sears_sku_nbr:chararray,
+                                              sears_location_id:chararray,
+                                              sears_source_location_id:chararray,
+                                              rim_status_cd:chararray,
+                                              stock_type_cd:chararray,
+                                              non_stock_source_cd:chararray,
+                                              dos_item_active_ind:chararray,
+                                              dos_item_reserve_cd:chararray,
+                                              create_dt:chararray,
+                                              last_update_dt:chararray,
+                                              shc_item_type_cd:chararray,
+                                              format_type_cd:chararray,
+                                              outbound_package_qty:chararray,
+                                              retail_carton_internal_package_qty:chararray,
+                                              vendor_carton_qty:chararray,
+                                              enable_jif_dc_ind:chararray,
+					      					  rim_last_record_creation_dt:chararray,
+                                              idrp_batch_id:chararray
+                                             '
+
+###############################################################################
+#<>                                  END                                    <>#
+###############################################################################

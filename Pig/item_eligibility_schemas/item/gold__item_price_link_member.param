@@ -1,0 +1,7 @@
+
+gold__item_price_link_member_schema='load_ts:chararray,\
+                                       item_id:chararray,\
+                                       effective_ts:chararray,\
+                                       expiration_ts:chararray,\
+                                       price_link_id:chararray,\
+                                       price_link_member_alt_id:chararray'						

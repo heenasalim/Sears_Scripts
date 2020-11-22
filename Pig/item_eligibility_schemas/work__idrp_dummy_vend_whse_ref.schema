@@ -1,0 +1,36 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         work__idrp_dummy_vend_whse_ref.schema
+# AUTHOR NAME:         Abhijeet Shingate
+# CREATION DATE:       Mon Oct 14 05:08:44 EDT 2013
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+# SOURCE SCHEMA TYPE: STATIC
+# SOURCE SCHEMA NAME: NA
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+WORK__IDRP_DUMMY_VEND_WHSE_REF_LOCAL_LOCATION=$PIG_SCHEMAS_DIR/item_eligibility/dummy_vend_whse_ref
+
+WORK__IDRP_DUMMY_VEND_WHSE_REF_LOCATION=$PROJECT_WORK_DIR/dummy_vend_whse_ref
+
+WORK__IDRP_DUMMY_VEND_WHSE_REF_SCHEMA='
+                                       vendor_nbr:chararray,
+                                       vendor_desc:chararray,
+                                       warehouse_nbr:chararray
+                                      '
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################

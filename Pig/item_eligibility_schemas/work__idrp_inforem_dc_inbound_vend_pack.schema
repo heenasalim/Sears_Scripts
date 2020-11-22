@@ -1,0 +1,51 @@
+###############################################################################
+#<>                                   HEADER                                <>#
+###############################################################################
+# SCRIPT NAME:         work__idrp_inforem_dc_inbound_vend_pack.schema
+# AUTHOR NAME:         Abhijeet Shingate
+# CREATION DATE:       Mon Oct 14 05:10:25 EDT 2013
+# CURRENT REVISION NO: 1
+#
+# DESCRIPTION: <<TODO>>
+#
+# SOURCE SCHEMA TYPE: COPYBOOK
+# SOURCE SCHEMA NAME: INFOREM-DC-INBOUND-VEND-PACK.cpbk
+#
+#
+# REV LIST:
+#        DATE         BY            MODIFICATION
+#
+#
+#
+###############################################################################
+#<>                                    BODY                                 <>#
+###############################################################################
+
+WORK__IDRP_INFOREM_DC_INBOUND_VEND_PACK_COPYBOOK_LOCAL_LOCATION=$MAINFRAME_COPYBOOKS_LOCAL_DIR/INFOREM-DC-INBOUND-VEND-PACK.cpbk
+
+WORK__IDRP_INFOREM_DC_INBOUND_VEND_PACK_COPYBOOK_INCOMING_LOCATION=$MAINFRAME_COPYBOOKS_HDFS_DIR/INFOREM-DC-INBOUND-VEND-PACK.cpbk
+
+WORK__IDRP_INFOREM_DC_INBOUND_VEND_PACK_STAGING_LOCATION=$STAGING_DIR/mainframe/kmart/inforem/dc_inbound_vend_pack
+
+WORK__IDRP_INFOREM_DC_INBOUND_VEND_PACK_INCOMING_LOCATION=$PROJECT_INCOMING_DIR/inforem_dc_inbound_vend_pack
+
+WORK__IDRP_INFOREM_DC_INBOUND_VEND_PACK_CONVERTED_WORK_LOCATION=$PROJECT_WORK_DIR/converted/inforem_dc_inbound_vend_pack
+
+WORK__IDRP_INFOREM_DC_INBOUND_VEND_PACK_FORMATTED_WORK_LOCATION=$PROJECT_WORK_DIR/formatted/inforem_dc_inbound_vend_pack
+
+WORK__IDRP_INFOREM_DC_INBOUND_VEND_PACK_LOCATION=$PROJECT_WORK_DIR/inforem_dc_inbound_vend_pack
+
+WORK__IDRP_INFOREM_DC_INBOUND_VEND_PACK_SCHEMA='
+                                                inbnd_item_id:chararray,
+                                                inbnd_dc_locn_nbr:chararray,
+                                                inbnd_vend_pack_id:chararray,
+                                                inbnd_ship_duns_nbr:chararray,
+                                                inbnd_reord_ins_date:long,
+                                                inbnd_store_count:long,
+                                                inbnd_orderable_ndc:chararray,
+                                                filler:chararray
+                                               '
+
+###############################################################################
+#<>                                    END                                  <>#
+###############################################################################
